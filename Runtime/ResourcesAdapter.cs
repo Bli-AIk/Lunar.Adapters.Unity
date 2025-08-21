@@ -39,10 +39,16 @@ namespace Lunar.Adapters.Unity
             ResourcesUtility.ValidateUnityObjectType<T>("Resources.Load");
             return (T)(object)Resources.Load(path, typeof(T));
         }
+
         public IEnumerable<T> LoadAll<T>(string path)
         {
-            ResourcesUtility.ValidateUnityObjectType<T>("Resources.Load");
+            ResourcesUtility.ValidateUnityObjectType<T>("Resources.LoadAll");
             return Resources.LoadAll(path, typeof(T)).Cast<T>();
+        }
+
+        public IEnumerable<T> LoadAll<T>(IEnumerable<string> paths)
+        {
+            return paths.Select(Load<T>);
         }
 
         public void Release<T>(T resources)
@@ -64,14 +70,16 @@ namespace Lunar.Adapters.Unity
         [Obsolete("Obsolete")]
         public IEnumerable<T> LoadAll<T>(string path)
         {
+            ResourcesUtility.ValidateUnityObjectType<T>("Addressables.LoadAssets");
             return LoadAll<T>(path, null);
         }
 
+
         [Obsolete("Obsolete")]
-        public static IEnumerable<T> LoadAll<T>(string path, Action<T> callback)
+        public IEnumerable<T> LoadAll<T>(IEnumerable<string> paths)
         {
-            ResourcesUtility.ValidateUnityObjectType<T>("Addressables.LoadAll");
-            return Addressables.LoadAssets(path, callback).WaitForCompletion();
+            ResourcesUtility.ValidateUnityObjectType<T>("Addressables.LoadAssets");
+            return LoadAll<T>(paths, null);
         }
 
         public void Release<T>(T resources)
@@ -80,19 +88,19 @@ namespace Lunar.Adapters.Unity
             Addressables.Release(resources as Object);
         }
 
-        public Task<T> LoadAsync<T>(string key, CancellationToken ct = new())
+        public Task<T> LoadAsync<T>(string path, CancellationToken ct = new())
         {
             ResourcesUtility.ValidateUnityObjectType<T>("Addressables.LoadAssetAsync");
-            
+
             var tcs = new TaskCompletionSource<T>(TaskCreationOptions.RunContinuationsAsynchronously);
-            var req = Addressables.LoadAssetAsync<T>(key);
+            var req = Addressables.LoadAssetAsync<T>(path);
             CancellationTokenRegistration ctr = default;
 
             if (ct.CanBeCanceled)
             {
                 ctr = ct.Register(() => tcs.TrySetCanceled(ct));
             }
-            
+
             req.Completed += handle =>
             {
                 try
@@ -103,7 +111,7 @@ namespace Lunar.Adapters.Unity
                     }
                     else
                     {
-                        tcs.TrySetException(new Exception($"Failed to load asset: {key}"));
+                        tcs.TrySetException(new Exception($"Failed to load asset: {path}"));
                     }
                 }
                 finally
@@ -114,6 +122,93 @@ namespace Lunar.Adapters.Unity
 
 
             return tcs.Task;
+        }
+
+        public Task<IEnumerable<T>> LoadAllAsync<T>(string path, CancellationToken ct = new())
+        {
+            ResourcesUtility.ValidateUnityObjectType<T>("Addressables.LoadAssetAsync");
+
+            var tcs = new TaskCompletionSource<IEnumerable<T>>(TaskCreationOptions.RunContinuationsAsynchronously);
+            var req = Addressables.LoadAssetsAsync<T>(path, null);
+            CancellationTokenRegistration ctr = default;
+
+            if (ct.CanBeCanceled)
+            {
+                ctr = ct.Register(() => tcs.TrySetCanceled(ct));
+            }
+
+            req.Completed += handle =>
+            {
+                try
+                {
+                    if (handle.Status == AsyncOperationStatus.Succeeded)
+                    {
+                        tcs.TrySetResult(handle.Result);
+                    }
+                    else
+                    {
+                        tcs.TrySetException(new Exception($"Failed to load asset: {path}"));
+                    }
+                }
+                finally
+                {
+                    ctr.Dispose();
+                }
+            };
+
+
+            return tcs.Task;
+        }
+
+        public Task<IEnumerable<T>> LoadAllAsync<T>(IEnumerable<string> paths, CancellationToken ct = new())
+        {
+            ResourcesUtility.ValidateUnityObjectType<T>("Addressables.LoadAssetAsync");
+
+            var tcs = new TaskCompletionSource<IEnumerable<T>>(TaskCreationOptions.RunContinuationsAsynchronously);
+            var req = Addressables.LoadAssetsAsync<T>(paths, null);
+            CancellationTokenRegistration ctr = default;
+
+            if (ct.CanBeCanceled)
+            {
+                ctr = ct.Register(() => tcs.TrySetCanceled(ct));
+            }
+
+            req.Completed += handle =>
+            {
+                try
+                {
+                    if (handle.Status == AsyncOperationStatus.Succeeded)
+                    {
+                        tcs.TrySetResult(handle.Result);
+                    }
+                    else
+                    {
+                        tcs.TrySetException(new Exception($"Failed to load asset: {paths}"));
+                    }
+                }
+                finally
+                {
+                    ctr.Dispose();
+                }
+            };
+
+
+            return tcs.Task;
+        }
+
+
+        [Obsolete("Obsolete")]
+        public static IEnumerable<T> LoadAll<T>(string path, Action<T> callback)
+        {
+            ResourcesUtility.ValidateUnityObjectType<T>("Addressables.LoadAssets");
+            return Addressables.LoadAssets(path, callback).WaitForCompletion();
+        }
+
+        [Obsolete("Obsolete")]
+        public static IEnumerable<T> LoadAll<T>(IEnumerable<string> paths, Action<T> callback)
+        {
+            ResourcesUtility.ValidateUnityObjectType<T>("Addressables.LoadAssets");
+            return Addressables.LoadAssets(paths, callback).WaitForCompletion();
         }
     }
 }
