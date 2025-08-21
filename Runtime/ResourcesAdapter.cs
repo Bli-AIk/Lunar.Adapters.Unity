@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Lunar.Interfaces;
@@ -37,62 +39,39 @@ namespace Lunar.Adapters.Unity
             ResourcesUtility.ValidateUnityObjectType<T>("Resources.Load");
             return (T)(object)Resources.Load(path, typeof(T));
         }
+        public IEnumerable<T> LoadAll<T>(string path)
+        {
+            ResourcesUtility.ValidateUnityObjectType<T>("Resources.Load");
+            return Resources.LoadAll(path, typeof(T)).Cast<T>();
+        }
 
         public void Release<T>(T resources)
         {
             ResourcesUtility.ValidateUnityObjectType<T>("Resources.UnloadAsset");
             Resources.UnloadAsset(resources as Object);
         }
-
-        
-        public Task<T> LoadAsync<T>(string path, CancellationToken ct = default)
-        {
-            ResourcesUtility.ValidateUnityObjectType<T>("Resources.LoadAsync");
-
-            if (ct.IsCancellationRequested)
-            {
-                return Task.FromCanceled<T>(ct);
-            }
-
-            var tcs = new TaskCompletionSource<T>(TaskCreationOptions.RunContinuationsAsynchronously);
-            var req = Resources.LoadAsync(path, typeof(T));
-            CancellationTokenRegistration ctr = default;
-
-            if (ct.CanBeCanceled)
-            {
-                ctr = ct.Register(() => tcs.TrySetCanceled(ct));
-            }
-
-            req.completed += _ =>
-            {
-                try
-                {
-                    if (req.asset is T t)
-                    {
-                        tcs.TrySetResult(t);
-                    }
-                    else
-                    {
-                        tcs.TrySetResult(default);
-                    }
-                }
-                finally
-                {
-                    ctr.Dispose();
-                }
-            };
-
-            return tcs.Task;
-        }
     }
 
-    public class AddressablesAdapter : IResources
+    public class AddressablesAdapter : IResources, IResourcesAsync
     {
         [Obsolete("Obsolete")]
         public T Load<T>(string key)
         {
             ResourcesUtility.ValidateUnityObjectType<T>("Addressables.LoadAsset");
             return Addressables.LoadAsset<T>(key).WaitForCompletion();
+        }
+
+        [Obsolete("Obsolete")]
+        public IEnumerable<T> LoadAll<T>(string path)
+        {
+            return LoadAll<T>(path, null);
+        }
+
+        [Obsolete("Obsolete")]
+        public static IEnumerable<T> LoadAll<T>(string path, Action<T> callback)
+        {
+            ResourcesUtility.ValidateUnityObjectType<T>("Addressables.LoadAll");
+            return Addressables.LoadAssets(path, callback).WaitForCompletion();
         }
 
         public void Release<T>(T resources)
