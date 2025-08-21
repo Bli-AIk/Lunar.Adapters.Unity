@@ -12,10 +12,7 @@ namespace Lunar.Adapters.Unity.Tests
         [Test]
         public void ValidateUnityObjectType_ThrowsForNonUnityType_NoMethodName()
         {
-            var ex = Assert.Throws<InvalidOperationException>(() =>
-            {
-                ResourcesUtility.ValidateUnityObjectType<int>();
-            });
+            var ex = Assert.Throws<InvalidOperationException>(ResourcesUtility.ValidateUnityObjectType<int>);
             StringAssert.Contains("System.Int32", ex.Message);
             StringAssert.Contains("cannot be loaded", ex.Message);
         }
@@ -35,8 +32,8 @@ namespace Lunar.Adapters.Unity.Tests
         public void ValidateUnityObjectType_AllowsUnityObjectType()
         {
             // Should not throw for UnityEngine.Object derived types
-            Assert.DoesNotThrow(() => ResourcesUtility.ValidateUnityObjectType<TextAsset>());
-            Assert.DoesNotThrow(() => ResourcesUtility.ValidateUnityObjectType<UnityEngine.GameObject>("LoadGameObject"));
+            Assert.DoesNotThrow(ResourcesUtility.ValidateUnityObjectType<TextAsset>);
+            Assert.DoesNotThrow(() => ResourcesUtility.ValidateUnityObjectType<GameObject>("LoadGameObject"));
         }
     }
 
@@ -66,7 +63,8 @@ namespace Lunar.Adapters.Unity.Tests
             var all = _adapter.LoadAll<TextAsset>("TestAssets").ToList();
             Assert.IsNotNull(all);
             // expect at least two that we placed
-            Assert.IsTrue(all.Count >= 2, $"Expected at least 2 TextAssets under Resources/TestAssets but got {all.Count}");
+            Assert.IsTrue(all.Count >= 2,
+                $"Expected at least 2 TextAssets under Resources/TestAssets but got {all.Count}");
             var texts = all.Select(t => t.text.Trim()).ToList();
             CollectionAssert.Contains(texts, "ONE");
             CollectionAssert.Contains(texts, "TWO");
@@ -87,7 +85,7 @@ namespace Lunar.Adapters.Unity.Tests
         {
             var asset = _adapter.Load<TextAsset>("TestAssets/one");
             Assert.IsNotNull(asset);
-            Assert.DoesNotThrow(() => _adapter.Release<TextAsset>(asset));
+            Assert.DoesNotThrow(() => _adapter.Release(asset));
             // Resources.UnloadAsset doesn't provide a return; we just ensure Release doesn't throw
         }
     }
@@ -119,11 +117,13 @@ namespace Lunar.Adapters.Unity.Tests
             Assert.Throws<InvalidOperationException>(() =>
             {
                 // static overload also validates type right away
-                var task = AddressablesAdapter.LoadAllAsync<int>("somePath", null, Addressables.MergeMode.None, CancellationToken.None);
+                var task = AddressablesAdapter.LoadAllAsync<int>("somePath", null, Addressables.MergeMode.None,
+                    CancellationToken.None);
             });
         }
 
         [Test]
+        [Obsolete("Obsolete")]
         public void Obsolete_LoadAll_Static_ThrowsImmediately_ForNonUnityType()
         {
             Assert.Throws<InvalidOperationException>(() =>
