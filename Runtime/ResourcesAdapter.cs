@@ -60,130 +60,140 @@ namespace Lunar.Adapters.Unity
 
     public class AddressablesAdapter : IResources, IResourcesAsync
     {
-        [Obsolete("Obsolete")]
+        [Obsolete("Use LoadAsync instead.")]
         public T Load<T>(string key)
         {
             ResourcesUtility.ValidateUnityObjectType<T>("Addressables.LoadAsset");
             return Addressables.LoadAsset<T>(key).WaitForCompletion();
         }
 
-        [Obsolete("Obsolete")]
+        [Obsolete("Use LoadAllAsync instead.")]
         public IEnumerable<T> LoadAll<T>(string path)
         {
-            ResourcesUtility.ValidateUnityObjectType<T>("Addressables.LoadAssets");
             return LoadAll<T>(path, null);
         }
 
-
-        [Obsolete("Obsolete")]
+        [Obsolete("Use LoadAllAsync instead.")]
         public IEnumerable<T> LoadAll<T>(IEnumerable<string> paths)
         {
-            ResourcesUtility.ValidateUnityObjectType<T>("Addressables.LoadAssets");
             return LoadAll<T>(paths, null);
         }
 
-        public void Release<T>(T resources)
+        public void Release<T>(T resource)
         {
             ResourcesUtility.ValidateUnityObjectType<T>("Addressables.Release");
-            Addressables.Release(resources as Object);
+            if (resource is Object obj)
+            {
+                Addressables.Release(obj);
+            }
         }
 
         public Task<T> LoadAsync<T>(string path, CancellationToken ct = new())
         {
             ResourcesUtility.ValidateUnityObjectType<T>("Addressables.LoadAssetAsync");
-
-            var tcs = new TaskCompletionSource<T>(TaskCreationOptions.RunContinuationsAsynchronously);
-            var req = Addressables.LoadAssetAsync<T>(path);
-            CancellationTokenRegistration ctr = default;
-
-            if (ct.CanBeCanceled)
-            {
-                ctr = ct.Register(() => tcs.TrySetCanceled(ct));
-            }
-
-            req.Completed += handle =>
-            {
-                try
-                {
-                    if (handle.Status == AsyncOperationStatus.Succeeded)
-                    {
-                        tcs.TrySetResult(handle.Result);
-                    }
-                    else
-                    {
-                        tcs.TrySetException(new Exception($"Failed to load asset: {path}"));
-                    }
-                }
-                finally
-                {
-                    ctr.Dispose();
-                }
-            };
-
-
-            return tcs.Task;
+            var handle = Addressables.LoadAssetAsync<T>(path);
+            return HandleAsyncOperation(handle, path, ct);
         }
 
-        public Task<IEnumerable<T>> LoadAllAsync<T>(string path, CancellationToken ct = new())
+        public async Task<IEnumerable<T>> LoadAllAsync<T>(IEnumerable<string> paths,
+            CancellationToken ct = new())
         {
-            ResourcesUtility.ValidateUnityObjectType<T>("Addressables.LoadAssetAsync");
-
-            var tcs = new TaskCompletionSource<IEnumerable<T>>(TaskCreationOptions.RunContinuationsAsynchronously);
-            var req = Addressables.LoadAssetsAsync<T>(path, null);
-            CancellationTokenRegistration ctr = default;
-
-            if (ct.CanBeCanceled)
-            {
-                ctr = ct.Register(() => tcs.TrySetCanceled(ct));
-            }
-
-            req.Completed += handle =>
-            {
-                try
-                {
-                    if (handle.Status == AsyncOperationStatus.Succeeded)
-                    {
-                        tcs.TrySetResult(handle.Result);
-                    }
-                    else
-                    {
-                        tcs.TrySetException(new Exception($"Failed to load asset: {path}"));
-                    }
-                }
-                finally
-                {
-                    ctr.Dispose();
-                }
-            };
-
-
-            return tcs.Task;
+            return await LoadAllAsync<T>(paths, null, Addressables.MergeMode.None, ct);
         }
 
-        public Task<IEnumerable<T>> LoadAllAsync<T>(IEnumerable<string> paths, CancellationToken ct = new())
+        public async Task<IEnumerable<T>> LoadAllAsync<T>(string path,
+            CancellationToken ct = new())
         {
-            ResourcesUtility.ValidateUnityObjectType<T>("Addressables.LoadAssetAsync");
+            return await LoadAllAsync<T>(path, null, Addressables.MergeMode.None, ct);
+        }
 
-            var tcs = new TaskCompletionSource<IEnumerable<T>>(TaskCreationOptions.RunContinuationsAsynchronously);
-            var req = Addressables.LoadAssetsAsync<T>(paths, null);
+
+        public static async Task<IEnumerable<T>> LoadAllAsync<T>(string path,
+            Action<T> callback,
+            Addressables.MergeMode mergeMode,
+            CancellationToken ct = new())
+        {
+            ResourcesUtility.ValidateUnityObjectType<T>("Addressables.LoadAssetsAsync");
+            var handle = Addressables.LoadAssetsAsync(path, callback, mergeMode);
+            return await HandleAsyncOperation(handle, path, ct);
+        }
+
+        public async Task<IEnumerable<T>> LoadAllAsync<T>(string path,
+            Addressables.MergeMode mergeMode,
+            CancellationToken ct = new())
+        {
+            return await LoadAllAsync<T>(path, null, mergeMode, ct);
+        }
+
+        public async Task<IEnumerable<T>> LoadAllAsync<T>(string path,
+            Action<T> callback,
+            CancellationToken ct = new())
+        {
+            return await LoadAllAsync(path, callback, Addressables.MergeMode.None, ct);
+        }
+
+
+        public async Task<IEnumerable<T>> LoadAllAsync<T>(IEnumerable<string> paths,
+            Addressables.MergeMode mergeMode,
+            CancellationToken ct = new())
+        {
+            return await LoadAllAsync<T>(paths, null, mergeMode, ct);
+        }
+
+        public async Task<IEnumerable<T>> LoadAllAsync<T>(IEnumerable<string> paths,
+            Action<T> callback,
+            CancellationToken ct = new())
+        {
+            return await LoadAllAsync(paths, callback, Addressables.MergeMode.None, ct);
+        }
+
+        public static async Task<IEnumerable<T>> LoadAllAsync<T>(IEnumerable<string> paths,
+            Action<T> callback,
+            Addressables.MergeMode mergeMode,
+            CancellationToken ct = new())
+        {
+            ResourcesUtility.ValidateUnityObjectType<T>("Addressables.LoadAssetsAsync");
+            var handle = Addressables.LoadAssetsAsync(paths, callback, mergeMode);
+            return await HandleAsyncOperation(handle, paths, ct);
+        }
+
+        /// <summary>
+        ///     A private helper method to convert an AsyncOperationHandle into a Task.
+        ///     This encapsulates the logic for handling completion, cancellation, and exceptions.
+        /// </summary>
+        /// <param name="handle">The Addressables async operation handle.</param>
+        /// <param name="key">The key or path used for loading, for exception messages.</param>
+        /// <param name="ct">The cancellation token.</param>
+        /// <typeparam name="TResult">The result type of the operation.</typeparam>
+        /// <returns>A Task representing the async operation.</returns>
+        private static Task<TResult> HandleAsyncOperation<TResult>(AsyncOperationHandle<TResult> handle,
+            object key,
+            CancellationToken ct)
+        {
+            var tcs = new TaskCompletionSource<TResult>(TaskCreationOptions.RunContinuationsAsynchronously);
+
             CancellationTokenRegistration ctr = default;
-
             if (ct.CanBeCanceled)
             {
-                ctr = ct.Register(() => tcs.TrySetCanceled(ct));
+                ctr = ct.Register(() =>
+                {
+                    Addressables.Release(handle);
+                    tcs.TrySetCanceled(ct);
+                });
             }
 
-            req.Completed += handle =>
+            handle.Completed += h =>
             {
                 try
                 {
-                    if (handle.Status == AsyncOperationStatus.Succeeded)
+                    if (h.Status == AsyncOperationStatus.Succeeded)
                     {
-                        tcs.TrySetResult(handle.Result);
+                        tcs.TrySetResult(h.Result);
                     }
                     else
                     {
-                        tcs.TrySetException(new Exception($"Failed to load asset: {paths}"));
+                        tcs.TrySetException(new Exception($"Failed to load asset with key: {key}. Status: {h.Status}",
+                            h.OperationException));
                     }
                 }
                 finally
@@ -192,19 +202,18 @@ namespace Lunar.Adapters.Unity
                 }
             };
 
-
             return tcs.Task;
         }
 
 
-        [Obsolete("Obsolete")]
+        [Obsolete("Use LoadAllAsync instead.")]
         public static IEnumerable<T> LoadAll<T>(string path, Action<T> callback)
         {
             ResourcesUtility.ValidateUnityObjectType<T>("Addressables.LoadAssets");
             return Addressables.LoadAssets(path, callback).WaitForCompletion();
         }
 
-        [Obsolete("Obsolete")]
+        [Obsolete("Use LoadAllAsync instead.")]
         public static IEnumerable<T> LoadAll<T>(IEnumerable<string> paths, Action<T> callback)
         {
             ResourcesUtility.ValidateUnityObjectType<T>("Addressables.LoadAssets");
