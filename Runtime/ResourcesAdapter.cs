@@ -1,11 +1,12 @@
 using System;
 using Lunar.Interfaces;
+using UnityEngine;
 using UnityEngine.AddressableAssets;
 using Object = UnityEngine.Object;
 
 namespace Lunar.Adapters.Unity
 {
-    public class Resources : IResources
+    public class ResourcesAdapter : IResources
     {
         public T Load<T>(string path)
         {
@@ -15,7 +16,7 @@ namespace Lunar.Adapters.Unity
                     $"Type {typeof(T)} is not UnityEngine.Object and cannot be loaded through Resources.Load.");
             }
 
-            return (T)(object)UnityEngine.Resources.Load(path, typeof(T));
+            return (T)(object)Resources.Load(path, typeof(T));
         }
 
         public void Release<T>(T resources)
@@ -26,11 +27,11 @@ namespace Lunar.Adapters.Unity
                     $"Type {typeof(T)} is not UnityEngine.Object and cannot be released through Resources.UnloadAsset.");
             }
 
-            UnityEngine.Resources.UnloadAsset(resources as Object);
+            Resources.UnloadAsset(resources as Object);
         }
     }
 
-    public class Addressables : IResources
+    public class AddressablesAdapter : IResources
     {
         [Obsolete("Obsolete")]
         public T Load<T>(string key)
@@ -40,8 +41,9 @@ namespace Lunar.Adapters.Unity
                 throw new InvalidOperationException(
                     $"Type {typeof(T)} is not UnityEngine.Object and cannot be loaded through Addressables.LoadAsset.");
             }
-            return UnityEngine.AddressableAssets.Addressables.LoadAsset<T>(key).WaitForCompletion();
-        } 
+
+            return Addressables.LoadAsset<T>(key).WaitForCompletion();
+        }
 
         public void Release<T>(T resources)
         {
@@ -51,7 +53,7 @@ namespace Lunar.Adapters.Unity
                     $"Type {typeof(T)} is not UnityEngine.Object and cannot be released through Resources.UnloadAsset.");
             }
 
-            UnityEngine.AddressableAssets.Addressables.Release(resources as Object);
+            Addressables.Release(resources as Object);
         }
     }
 }
