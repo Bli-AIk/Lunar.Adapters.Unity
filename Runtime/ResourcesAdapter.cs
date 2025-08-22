@@ -47,10 +47,10 @@ namespace Lunar.Adapters.Unity
             return paths.Select(Load<T>);
         }
 
-        public void Release<T>(T resources)
+        public void Release<T>(T resource)
         {
             ResourcesUtility.ValidateUnityObjectType<T>("Resources.UnloadAsset");
-            Resources.UnloadAsset(resources as Object);
+            Resources.UnloadAsset(resource as Object);
         }
     }
 }
