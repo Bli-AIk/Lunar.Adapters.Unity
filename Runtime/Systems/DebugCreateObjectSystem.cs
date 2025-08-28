@@ -1,4 +1,5 @@
 using Arch.Core;
+using Arch.Core.Extensions;
 using Arch.System;
 using Lunar.Components;
 using UnityEngine;
@@ -21,6 +22,7 @@ namespace Lunar.Adapters.Unity.Systems
             {
                 var entity = World.Create(new GameObjectComponent());
                 Debug.Log($"Created {entity}");
+                entity.Add(new NameComponent($"Lunar Entity: {entity.Id}"));
             }
 
 
