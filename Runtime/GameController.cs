@@ -34,24 +34,6 @@ namespace Lunar.Adapters.Unity
             var deltaTime = Time.deltaTime;
             _systems.BeforeUpdate(in deltaTime);
             _systems.Update(in deltaTime);
-
-            //Test
-
-            if (Input.GetKeyDown(UnityEngine.KeyCode.A))
-            {
-                _mainWorld.Create(new GameObjectComponent());
-            }
-
-
-            if (Input.GetKeyDown(UnityEngine.KeyCode.Q))
-            {
-                var query = new QueryDescription().WithAll<GameObjectComponent>();
-                _mainWorld.Query(in query, (Entity entity,
-                    ref GameObjectComponent gameObjectComponent) =>
-                {
-                    entity.Remove<GameObjectComponent>();
-                });
-            }
         }
 
         private void FixedUpdate()
