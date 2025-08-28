@@ -1,10 +1,10 @@
 using Arch.Core;
 using Arch.Core.Extensions;
 using Arch.System;
-using UnityEngine;
-using UnityEngine.Pool;
 using Lunar.Adapters.Unity.Systems;
 using Lunar.Components;
+using UnityEngine;
+using UnityEngine.Pool;
 
 namespace Lunar.Adapters.Unity
 {
@@ -17,7 +17,7 @@ namespace Lunar.Adapters.Unity
         private void Awake()
         {
             SetUpGameObjectPool();
-            
+
             _mainWorld = World.Create();
 
             _systems = new Group<float>("MainGroup",
@@ -27,19 +27,6 @@ namespace Lunar.Adapters.Unity
             SetEvents();
 
             _systems.Initialize();
-        }
-
-        private void SetUpGameObjectPool()
-        {
-            _gameObjectPool = new ObjectPool<UnityEngine.GameObject>(
-                createFunc: () => new UnityEngine.GameObject(),
-                actionOnGet: gameObjectItem => gameObjectItem.SetActive(true),
-                actionOnRelease: gameObjectItem => gameObjectItem.SetActive(false),
-                actionOnDestroy: Destroy,
-                collectionCheck: false,
-                defaultCapacity: 20,
-                maxSize: 200
-            );
         }
 
         private void Update()
@@ -54,26 +41,14 @@ namespace Lunar.Adapters.Unity
             {
                 _mainWorld.Create(new GameObjectComponent());
             }
-            
-            
+
+
             if (Input.GetKeyDown(UnityEngine.KeyCode.Q))
             {
-                RemoveObject();
-            }
-
-            return;
-
-            void RemoveObject()
-            {
                 var query = new QueryDescription().WithAll<GameObjectComponent>();
-                _mainWorld.Query(in query, (Entity entity, 
+                _mainWorld.Query(in query, (Entity entity,
                     ref GameObjectComponent gameObjectComponent) =>
                 {
-                    if (gameObjectComponent.GameObject != null)
-                    {
-                        _gameObjectPool.Release(gameObjectComponent.GameObject.BaseGameObject as UnityEngine.GameObject);
-                    }
-
                     entity.Remove<GameObjectComponent>();
                 });
             }
@@ -98,6 +73,19 @@ namespace Lunar.Adapters.Unity
             _gameObjectPool.Clear();
         }
 
+        private void SetUpGameObjectPool()
+        {
+            _gameObjectPool = new ObjectPool<UnityEngine.GameObject>(
+                () => new UnityEngine.GameObject(),
+                gameObjectItem => gameObjectItem.SetActive(true),
+                gameObjectItem => gameObjectItem.SetActive(false),
+                Destroy,
+                false,
+                20,
+                200
+            );
+        }
+
         private void SetEvents()
         {
             _mainWorld.SubscribeComponentAdded((in Entity entity, ref GameObjectComponent gameObjectComponent) =>
@@ -111,10 +99,19 @@ namespace Lunar.Adapters.Unity
                 {
                     return;
                 }
+
                 var unityGameObject = _gameObjectPool.Get();
                 unityGameObject.transform.SetParent(transform);
-                
+
                 entity.Set(new GameObjectComponent(new GameObject(unityGameObject)));
+            });
+
+            _mainWorld.SubscribeComponentRemoved((in Entity entity, ref GameObjectComponent gameObjectComponent) =>
+            {
+                if (gameObjectComponent.GameObject != null)
+                {
+                    _gameObjectPool.Release(gameObjectComponent.GameObject.BaseGameObject as UnityEngine.GameObject);
+                }
             });
         }
     }
