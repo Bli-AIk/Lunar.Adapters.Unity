@@ -21,7 +21,7 @@ namespace Lunar.Adapters.Unity
             _mainWorld = World.Create();
 
             _systems = new Group<float>("MainGroup",
-                new RenderingSystem(_mainWorld)
+                new GameObjectSyncSystem(_mainWorld)
             );
 
             SetEvents();
@@ -84,7 +84,6 @@ namespace Lunar.Adapters.Unity
 
                 var unityGameObject = _gameObjectPool.Get();
                 unityGameObject.transform.SetParent(transform);
-
                 entity.Set(new GameObjectComponent(new GameObject(unityGameObject)));
             });
 
