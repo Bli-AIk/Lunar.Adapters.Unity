@@ -25,7 +25,8 @@ namespace Lunar.Adapters.Unity
         protected override Group<float> CreateSystems(World world)
         {
             return new Group<float>("MainGroup",
-                new GameObjectSyncSystem(world)
+                new GameObjectSyncSystem(world),
+                new DebugCreateObjectSystem(world)
             );
         }
 
