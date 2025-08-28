@@ -1,8 +1,3 @@
-using Arch.Core;
-using Arch.Core.Extensions;
-using Arch.System;
-using Lunar.Adapters.Unity.Systems;
-using Lunar.Components;
 using UnityEngine;
 using UnityEngine.Pool;
 
@@ -10,48 +5,29 @@ namespace Lunar.Adapters.Unity
 {
     public class GameController : MonoBehaviour
     {
+        private GameControllerImplementation _controller;
         private ObjectPool<UnityEngine.GameObject> _gameObjectPool;
-        private World _mainWorld;
-        private Group<float> _systems;
 
         private void Awake()
         {
             SetUpGameObjectPool();
-
-            _mainWorld = World.Create();
-
-            _systems = new Group<float>("MainGroup",
-                new GameObjectSyncSystem(_mainWorld)
-            );
-
-            SetEvents();
-
-            _systems.Initialize();
+            _controller = new GameControllerImplementation(_gameObjectPool, transform);
+            _controller.Initialize();
         }
 
         private void Update()
         {
-            var deltaTime = Time.deltaTime;
-            _systems.BeforeUpdate(in deltaTime);
-            _systems.Update(in deltaTime);
-        }
-
-        private void FixedUpdate()
-        {
-            var fixedDeltaTime = Time.fixedDeltaTime;
-            // _physicsSystems.Update(in fixedDeltaTime);
+            _controller.Update(Time.deltaTime);
         }
 
         private void LateUpdate()
         {
-            var deltaTime = Time.deltaTime;
-            _systems.AfterUpdate(in deltaTime);
+            _controller.LateUpdate(Time.deltaTime);
         }
 
         private void OnDestroy()
         {
-            _systems.Dispose();
-            _mainWorld.Dispose();
+            _controller.Dispose();
             _gameObjectPool.Clear();
         }
 
@@ -59,41 +35,13 @@ namespace Lunar.Adapters.Unity
         {
             _gameObjectPool = new ObjectPool<UnityEngine.GameObject>(
                 () => new UnityEngine.GameObject(),
-                gameObjectItem => gameObjectItem.SetActive(true),
-                gameObjectItem => gameObjectItem.SetActive(false),
+                go => go.SetActive(true),
+                go => go.SetActive(false),
                 Destroy,
                 false,
                 20,
                 200
             );
-        }
-
-        private void SetEvents()
-        {
-            _mainWorld.SubscribeComponentAdded((in Entity entity, ref GameObjectComponent gameObjectComponent) =>
-            {
-                if (!entity.Has<PositionComponent>())
-                {
-                    entity.Add<PositionComponent>();
-                }
-
-                if (gameObjectComponent.GameObject != null)
-                {
-                    return;
-                }
-
-                var unityGameObject = _gameObjectPool.Get();
-                unityGameObject.transform.SetParent(transform);
-                entity.Set(new GameObjectComponent(new GameObject(unityGameObject)));
-            });
-
-            _mainWorld.SubscribeComponentRemoved((in Entity entity, ref GameObjectComponent gameObjectComponent) =>
-            {
-                if (gameObjectComponent.GameObject != null)
-                {
-                    _gameObjectPool.Release(gameObjectComponent.GameObject.BaseGameObject as UnityEngine.GameObject);
-                }
-            });
         }
     }
 }
