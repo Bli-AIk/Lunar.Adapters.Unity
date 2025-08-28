@@ -1,6 +1,7 @@
 using Arch.Core;
 using Arch.System;
 using Lunar.Components;
+using UnityEngine;
 
 namespace Lunar.Adapters.Unity.Systems
 {
@@ -14,7 +15,12 @@ namespace Lunar.Adapters.Unity.Systems
             World.Query(in gameObjectQuery,
                 (Entity entity, ref GameObjectComponent lunarGameObject, ref PositionComponent position) =>
                 {
-                    
+                    var gameObject = lunarGameObject.GameObject.BaseGameObject as UnityEngine.GameObject;
+
+                    if (gameObject)
+                    {
+                        gameObject.transform.position = new Vector3(position.X, position.Y, position.Z);
+                    }
                 });
         }
     }
