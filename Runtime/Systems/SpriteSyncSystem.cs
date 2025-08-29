@@ -1,6 +1,7 @@
 using System;
 using Arch.Core;
 using JetBrains.Annotations;
+using Lunar.Adapters.Unity.Utils;
 using Lunar.Components;
 using Lunar.Systems;
 using UnityEngine;

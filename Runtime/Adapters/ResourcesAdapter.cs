@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 using Lunar.Interfaces;
 using UnityEngine;
 using Object = UnityEngine.Object;
@@ -28,7 +30,7 @@ namespace Lunar.Adapters.Unity
         }
     }
 
-    public class ResourcesAdapter : IResources
+    public class ResourcesAdapter : IResources, IResourcesAsync
     {
         public T Load<T>(string path)
         {
@@ -51,6 +53,21 @@ namespace Lunar.Adapters.Unity
         {
             ResourcesUtility.ValidateUnityObjectType<T>("Resources.UnloadAsset");
             Resources.UnloadAsset(resource as Object);
+        }
+
+        public Task<T> LoadAsync<T>(string path, CancellationToken ct = new())
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<T>> LoadAllAsync<T>(string path, CancellationToken ct = new())
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<T>> LoadAllAsync<T>(IEnumerable<string> paths, CancellationToken ct = new())
+        {
+            throw new NotImplementedException();
         }
     }
 }

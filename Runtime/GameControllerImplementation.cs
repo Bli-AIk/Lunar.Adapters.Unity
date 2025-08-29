@@ -2,6 +2,7 @@ using Arch.Core;
 using Arch.Core.Extensions;
 using Arch.System;
 using Lunar.Adapters.Unity.Systems;
+using Lunar.Adapters.Unity.Utils;
 using Lunar.Components;
 using UnityEngine;
 using UnityEngine.Pool;
