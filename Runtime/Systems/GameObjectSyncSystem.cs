@@ -10,11 +10,16 @@ namespace Lunar.Adapters.Unity.Systems
     {
         public GameObjectSyncSystem(World world) : base(world) { }
 
-        protected override void SyncTransform(GameObjectComponent gameObject, PositionComponent position)
+        protected override void SyncTransform(GameObjectComponent gameObject, TransformComponent transform)
         {
             if (TryGetUnityGameObject(gameObject, out var unityGameObject))
             {
-                unityGameObject.transform.position = new Vector3(position.X, position.Y, position.Z);
+                unityGameObject.transform.position =
+                    new Vector3(transform.Position.X, transform.Position.Y, transform.Position.Z);
+                unityGameObject.transform.rotation =
+                    new Quaternion(transform.Rotation.X, transform.Rotation.Y, transform.Rotation.Z, transform.Rotation.W);
+                unityGameObject.transform.localScale =
+                    new Vector3(transform.Scale.X, transform.Scale.Y, transform.Scale.Z);
             }
         }
 

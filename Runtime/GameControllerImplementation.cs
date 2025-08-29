@@ -34,9 +34,9 @@ namespace Lunar.Adapters.Unity
         {
             world.SubscribeComponentAdded((in Entity entity, ref GameObjectComponent gameObjectComponent) =>
             {
-                if (!entity.Has<PositionComponent>())
+                if (!entity.Has<TransformComponent>())
                 {
-                    entity.Add<PositionComponent>();
+                    entity.Add(new TransformComponent());
                 }
 
                 if (gameObjectComponent.GameObject != null)
