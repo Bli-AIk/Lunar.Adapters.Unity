@@ -18,6 +18,12 @@ jobs:
         with:
           submodules: true
 
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0'
+
+
       - name: Build
         uses: CaseyHofland/docfx-unitypackage@v1
         with:
