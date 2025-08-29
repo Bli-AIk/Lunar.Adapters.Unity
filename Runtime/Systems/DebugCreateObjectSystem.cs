@@ -30,7 +30,7 @@ namespace Lunar.Adapters.Unity.Systems
             }
 
 
-            if (Input.GetKeyDown(UnityEngine.KeyCode.Q))
+            if (Input.GetKeyDown(UnityEngine.KeyCode.D))
             {
                 var query = new QueryDescription().WithAll<GameObjectComponent>();
                 World.Query(in query, (Entity entity,
@@ -38,6 +38,16 @@ namespace Lunar.Adapters.Unity.Systems
                 {
                     World.Remove<GameObjectComponent>(entity);
                     Debug.Log($"Remove {entity}");
+                });
+            }
+
+            if (Input.GetKeyDown(UnityEngine.KeyCode.W))
+            {
+                var queryS = new QueryDescription().WithAll<SpriteComponent>();
+                World.Query(in queryS, (Entity entity,
+                    ref SpriteComponent sprite) =>
+                {
+                    Debug.Log($"{entity} have {sprite}");
                 });
             }
 
