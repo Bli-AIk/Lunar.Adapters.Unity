@@ -34,12 +34,7 @@ namespace Lunar.Adapters.Unity.Systems
         {
             try
             {
-                if (sprite.Path == sprite.LastLoadPath)
-                {
-                    return sprite;
-                }
-
-                if (!sprite.TryParseToUnity(out var unitySpriteRenderer))
+                if (sprite.Path == sprite.LastLoadPath || !sprite.TryParseToUnity(out var unitySpriteRenderer))
                 {
                     return sprite;
                 }

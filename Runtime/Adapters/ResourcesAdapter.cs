@@ -55,19 +55,95 @@ namespace Lunar.Adapters.Unity
             Resources.UnloadAsset(resource as Object);
         }
 
-        public Task<T> LoadAsync<T>(string path, CancellationToken ct = new())
+        public Task<T> LoadAsync<T>(string path, CancellationToken ct = default)
         {
-            throw new NotImplementedException();
+            ResourcesUtility.ValidateUnityObjectType<T>("Resources.LoadAsync");
+
+            if (ct.IsCancellationRequested)
+            {
+                return Task.FromCanceled<T>(ct);
+            }
+
+            var tcs = new TaskCompletionSource<T>(TaskCreationOptions.RunContinuationsAsynchronously);
+            var req = Resources.LoadAsync(path, typeof(T));
+            CancellationTokenRegistration ctr = default;
+
+            if (ct.CanBeCanceled)
+            {
+                ctr = ct.Register(() => tcs.TrySetCanceled(ct));
+            }
+
+            req.completed += _ =>
+            {
+                try
+                {
+                    if (req.asset is T t)
+                    {
+                        tcs.TrySetResult(t);
+                    }
+                    else
+                    {
+                        tcs.TrySetResult(default);
+                    }
+                }
+                finally
+                {
+                    ctr.Dispose();
+                }
+            };
+            return tcs.Task;
         }
 
-        public Task<IEnumerable<T>> LoadAllAsync<T>(string path, CancellationToken ct = new())
+
+        public Task<IEnumerable<T>> LoadAllAsync<T>(string path, CancellationToken ct = default)
         {
-            throw new NotImplementedException();
+            ResourcesUtility.ValidateUnityObjectType<T>("Resources.LoadAll");
+
+            if (ct.IsCancellationRequested)
+            {
+                return Task.FromCanceled<IEnumerable<T>>(ct);
+            }
+
+            var tcs = new TaskCompletionSource<IEnumerable<T>>(TaskCreationOptions.RunContinuationsAsynchronously);
+
+            Task.Run(() =>
+            {
+                try
+                {
+                    if (ct.IsCancellationRequested)
+                    {
+                        tcs.TrySetCanceled(ct);
+                        return;
+                    }
+
+                    var assets = Resources.LoadAll(path, typeof(T)).Cast<T>();
+                    tcs.TrySetResult(assets);
+                }
+                catch (Exception ex)
+                {
+                    tcs.TrySetException(ex);
+                }
+            }, ct);
+
+            return tcs.Task;
         }
 
-        public Task<IEnumerable<T>> LoadAllAsync<T>(IEnumerable<string> paths, CancellationToken ct = new())
+        public async Task<IEnumerable<T>> LoadAllAsync<T>(IEnumerable<string> paths, CancellationToken ct = default)
         {
-            throw new NotImplementedException();
+            var results = new List<T>();
+
+            foreach (var path in paths)
+            {
+                ct.ThrowIfCancellationRequested();
+
+                var asset = await LoadAsync<T>(path, ct).ConfigureAwait(false);
+                if (asset != null)
+                {
+                    results.Add(asset);
+                }
+            }
+
+            return results;
         }
     }
 }

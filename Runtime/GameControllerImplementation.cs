@@ -31,7 +31,8 @@ namespace Lunar.Adapters.Unity
             return new Group<float>("MainGroup",
                 new DebugCreateObjectSystem(world),
                 new GameObjectSyncSystem(world),
-                new SpriteSyncSystem(world, serviceRegistry.Resources, serviceRegistry.Logger)
+                new SpriteSyncSystem(world, serviceRegistry.Resources, serviceRegistry.Logger),
+                new SpriteCleanSystem(world)
             );
         }
 
@@ -68,9 +69,15 @@ namespace Lunar.Adapters.Unity
                     return;
                 }
 
-                spriteComponent.Sprite = unityGameObject.TryGetComponent<SpriteRenderer>(out var spriteRenderer)
-                    ? new Sprite(spriteRenderer)
-                    : new Sprite(unityGameObject.AddComponent<SpriteRenderer>());
+                if (unityGameObject.TryGetComponent<SpriteRenderer>(out var spriteRenderer))
+                {
+                    spriteRenderer.enabled = true;
+                    spriteComponent.Sprite = new Sprite(spriteRenderer);
+                }
+                else
+                {
+                    spriteComponent.Sprite = new Sprite(unityGameObject.AddComponent<SpriteRenderer>());
+                }
             });
 
             world.SubscribeComponentRemoved((in Entity entity, ref GameObjectComponent gameObjectComponent) =>
