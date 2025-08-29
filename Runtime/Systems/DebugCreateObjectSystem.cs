@@ -35,7 +35,6 @@ namespace Lunar.Adapters.Unity.Systems
                     World.Remove<GameObjectComponent>(entity);
                     Debug.Log($"Remove {entity}");
                 });
-                
             }
         }
     }
