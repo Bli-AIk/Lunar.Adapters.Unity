@@ -25,8 +25,8 @@ namespace Lunar.Adapters.Unity
         protected override Group<float> CreateSystems(World world)
         {
             return new Group<float>("MainGroup",
-                new GameObjectSyncSystem(world),
-                new DebugCreateObjectSystem(world)
+                new DebugCreateObjectSystem(world),
+                new GameObjectSyncSystem(world)
             );
         }
 
@@ -48,7 +48,33 @@ namespace Lunar.Adapters.Unity
                 unityGameObject.transform.SetParent(_parent);
                 entity.Set(new GameObjectComponent(new GameObject(unityGameObject)));
             });
+            
+            
+            world.SubscribeComponentAdded((in Entity entity, ref SpriteComponent spriteComponent) =>
+            {
+                if (!entity.TryGet<GameObjectComponent>(out var gameObject))
+                {
+                    gameObject = new GameObjectComponent();
+                    entity.Add(gameObject);
+                }
+                
+                if (!gameObject.TryParseToUnity(out var unityGameObject))
+                {
+                    return;
+                }
 
+
+                if (unityGameObject.TryGetComponent<SpriteRenderer>(out var spriteRenderer))
+                {
+                    //spriteRenderer.sprite = ;
+                    spriteComponent.Sprite = new Sprite(spriteRenderer);
+                }
+                else
+                {
+                    spriteComponent.Sprite = new Sprite(unityGameObject.AddComponent<SpriteRenderer>());
+                }
+            });
+            
             world.SubscribeComponentRemoved((in Entity entity, ref GameObjectComponent gameObjectComponent) =>
             {
                 if (gameObjectComponent.GameObject != null)

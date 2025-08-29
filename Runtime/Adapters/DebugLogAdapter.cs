@@ -9,17 +9,23 @@ namespace Lunar.Adapters.Unity
     {
         public void Log(object message, object context = null)
         {
+            #if UNITY_EDITOR
             RunDebugLogger(Debug.Log, Debug.Log, message, context);
+            #endif
         }
 
         public void LogWarning(object message, object context = null)
         {
+            #if UNITY_EDITOR
             RunDebugLogger(Debug.LogWarning, Debug.LogWarning, message, context);
+            #endif
         }
 
         public void LogError(object message, object context = null)
         {
+            #if UNITY_EDITOR
             RunDebugLogger(Debug.LogError, Debug.LogError, message, context);
+            #endif
         }
 
         private static void RunDebugLogger(
