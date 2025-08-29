@@ -1,0 +1,915 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Lunar.Adapters.Unity
+  name: Lunar.Adapters.Unity
+  href: api/Lunar.Adapters.Unity.html
+  commentId: N:Lunar.Adapters.Unity
+  fullName: Lunar.Adapters.Unity
+  nameWithType: Lunar.Adapters.Unity
+- uid: Lunar.Adapters.Unity.DebugLogAdapter
+  name: DebugLogAdapter
+  href: api/Lunar.Adapters.Unity.DebugLogAdapter.html
+  commentId: T:Lunar.Adapters.Unity.DebugLogAdapter
+  fullName: Lunar.Adapters.Unity.DebugLogAdapter
+  nameWithType: DebugLogAdapter
+- uid: Lunar.Adapters.Unity.DebugLogAdapter.Log(System.Object,System.Object)
+  name: Log(object, object)
+  href: api/Lunar.Adapters.Unity.DebugLogAdapter.html#Lunar_Adapters_Unity_DebugLogAdapter_Log_System_Object_System_Object_
+  commentId: M:Lunar.Adapters.Unity.DebugLogAdapter.Log(System.Object,System.Object)
+  name.vb: Log(Object, Object)
+  fullName: Lunar.Adapters.Unity.DebugLogAdapter.Log(object, object)
+  fullName.vb: Lunar.Adapters.Unity.DebugLogAdapter.Log(Object, Object)
+  nameWithType: DebugLogAdapter.Log(object, object)
+  nameWithType.vb: DebugLogAdapter.Log(Object, Object)
+- uid: Lunar.Adapters.Unity.DebugLogAdapter.Log*
+  name: Log
+  href: api/Lunar.Adapters.Unity.DebugLogAdapter.html#Lunar_Adapters_Unity_DebugLogAdapter_Log_
+  commentId: Overload:Lunar.Adapters.Unity.DebugLogAdapter.Log
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.DebugLogAdapter.Log
+  nameWithType: DebugLogAdapter.Log
+- uid: Lunar.Adapters.Unity.DebugLogAdapter.LogError(System.Object,System.Object)
+  name: LogError(object, object)
+  href: api/Lunar.Adapters.Unity.DebugLogAdapter.html#Lunar_Adapters_Unity_DebugLogAdapter_LogError_System_Object_System_Object_
+  commentId: M:Lunar.Adapters.Unity.DebugLogAdapter.LogError(System.Object,System.Object)
+  name.vb: LogError(Object, Object)
+  fullName: Lunar.Adapters.Unity.DebugLogAdapter.LogError(object, object)
+  fullName.vb: Lunar.Adapters.Unity.DebugLogAdapter.LogError(Object, Object)
+  nameWithType: DebugLogAdapter.LogError(object, object)
+  nameWithType.vb: DebugLogAdapter.LogError(Object, Object)
+- uid: Lunar.Adapters.Unity.DebugLogAdapter.LogError*
+  name: LogError
+  href: api/Lunar.Adapters.Unity.DebugLogAdapter.html#Lunar_Adapters_Unity_DebugLogAdapter_LogError_
+  commentId: Overload:Lunar.Adapters.Unity.DebugLogAdapter.LogError
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.DebugLogAdapter.LogError
+  nameWithType: DebugLogAdapter.LogError
+- uid: Lunar.Adapters.Unity.DebugLogAdapter.LogWarning(System.Object,System.Object)
+  name: LogWarning(object, object)
+  href: api/Lunar.Adapters.Unity.DebugLogAdapter.html#Lunar_Adapters_Unity_DebugLogAdapter_LogWarning_System_Object_System_Object_
+  commentId: M:Lunar.Adapters.Unity.DebugLogAdapter.LogWarning(System.Object,System.Object)
+  name.vb: LogWarning(Object, Object)
+  fullName: Lunar.Adapters.Unity.DebugLogAdapter.LogWarning(object, object)
+  fullName.vb: Lunar.Adapters.Unity.DebugLogAdapter.LogWarning(Object, Object)
+  nameWithType: DebugLogAdapter.LogWarning(object, object)
+  nameWithType.vb: DebugLogAdapter.LogWarning(Object, Object)
+- uid: Lunar.Adapters.Unity.DebugLogAdapter.LogWarning*
+  name: LogWarning
+  href: api/Lunar.Adapters.Unity.DebugLogAdapter.html#Lunar_Adapters_Unity_DebugLogAdapter_LogWarning_
+  commentId: Overload:Lunar.Adapters.Unity.DebugLogAdapter.LogWarning
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.DebugLogAdapter.LogWarning
+  nameWithType: DebugLogAdapter.LogWarning
+- uid: Lunar.Adapters.Unity.GameBootstrap
+  name: GameBootstrap
+  href: api/Lunar.Adapters.Unity.GameBootstrap.html
+  commentId: T:Lunar.Adapters.Unity.GameBootstrap
+  fullName: Lunar.Adapters.Unity.GameBootstrap
+  nameWithType: GameBootstrap
+- uid: Lunar.Adapters.Unity.GameBootstrap.Awake
+  name: Awake()
+  href: api/Lunar.Adapters.Unity.GameBootstrap.html#Lunar_Adapters_Unity_GameBootstrap_Awake
+  commentId: M:Lunar.Adapters.Unity.GameBootstrap.Awake
+  fullName: Lunar.Adapters.Unity.GameBootstrap.Awake()
+  nameWithType: GameBootstrap.Awake()
+- uid: Lunar.Adapters.Unity.GameBootstrap.Awake*
+  name: Awake
+  href: api/Lunar.Adapters.Unity.GameBootstrap.html#Lunar_Adapters_Unity_GameBootstrap_Awake_
+  commentId: Overload:Lunar.Adapters.Unity.GameBootstrap.Awake
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.GameBootstrap.Awake
+  nameWithType: GameBootstrap.Awake
+- uid: Lunar.Adapters.Unity.GameBootstrap.ServiceRegistry
+  name: ServiceRegistry()
+  href: api/Lunar.Adapters.Unity.GameBootstrap.html#Lunar_Adapters_Unity_GameBootstrap_ServiceRegistry
+  commentId: M:Lunar.Adapters.Unity.GameBootstrap.ServiceRegistry
+  fullName: Lunar.Adapters.Unity.GameBootstrap.ServiceRegistry()
+  nameWithType: GameBootstrap.ServiceRegistry()
+- uid: Lunar.Adapters.Unity.GameBootstrap.ServiceRegistry*
+  name: ServiceRegistry
+  href: api/Lunar.Adapters.Unity.GameBootstrap.html#Lunar_Adapters_Unity_GameBootstrap_ServiceRegistry_
+  commentId: Overload:Lunar.Adapters.Unity.GameBootstrap.ServiceRegistry
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.GameBootstrap.ServiceRegistry
+  nameWithType: GameBootstrap.ServiceRegistry
+- uid: Lunar.Adapters.Unity.GameController
+  name: GameController
+  href: api/Lunar.Adapters.Unity.GameController.html
+  commentId: T:Lunar.Adapters.Unity.GameController
+  fullName: Lunar.Adapters.Unity.GameController
+  nameWithType: GameController
+- uid: Lunar.Adapters.Unity.GameController.DefaultServicesFactory
+  name: DefaultServicesFactory()
+  href: api/Lunar.Adapters.Unity.GameController.html#Lunar_Adapters_Unity_GameController_DefaultServicesFactory
+  commentId: M:Lunar.Adapters.Unity.GameController.DefaultServicesFactory
+  fullName: Lunar.Adapters.Unity.GameController.DefaultServicesFactory()
+  nameWithType: GameController.DefaultServicesFactory()
+- uid: Lunar.Adapters.Unity.GameController.DefaultServicesFactory*
+  name: DefaultServicesFactory
+  href: api/Lunar.Adapters.Unity.GameController.html#Lunar_Adapters_Unity_GameController_DefaultServicesFactory_
+  commentId: Overload:Lunar.Adapters.Unity.GameController.DefaultServicesFactory
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.GameController.DefaultServicesFactory
+  nameWithType: GameController.DefaultServicesFactory
+- uid: Lunar.Adapters.Unity.GameController.Services
+  name: Services
+  href: api/Lunar.Adapters.Unity.GameController.html#Lunar_Adapters_Unity_GameController_Services
+  commentId: P:Lunar.Adapters.Unity.GameController.Services
+  fullName: Lunar.Adapters.Unity.GameController.Services
+  nameWithType: GameController.Services
+- uid: Lunar.Adapters.Unity.GameController.Services*
+  name: Services
+  href: api/Lunar.Adapters.Unity.GameController.html#Lunar_Adapters_Unity_GameController_Services_
+  commentId: Overload:Lunar.Adapters.Unity.GameController.Services
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.GameController.Services
+  nameWithType: GameController.Services
+- uid: Lunar.Adapters.Unity.GameController.ServicesFactory
+  name: ServicesFactory
+  href: api/Lunar.Adapters.Unity.GameController.html#Lunar_Adapters_Unity_GameController_ServicesFactory
+  commentId: P:Lunar.Adapters.Unity.GameController.ServicesFactory
+  fullName: Lunar.Adapters.Unity.GameController.ServicesFactory
+  nameWithType: GameController.ServicesFactory
+- uid: Lunar.Adapters.Unity.GameController.ServicesFactory*
+  name: ServicesFactory
+  href: api/Lunar.Adapters.Unity.GameController.html#Lunar_Adapters_Unity_GameController_ServicesFactory_
+  commentId: Overload:Lunar.Adapters.Unity.GameController.ServicesFactory
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.GameController.ServicesFactory
+  nameWithType: GameController.ServicesFactory
+- uid: Lunar.Adapters.Unity.InputActionsAdapter
+  name: InputActionsAdapter
+  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html
+  commentId: T:Lunar.Adapters.Unity.InputActionsAdapter
+  fullName: Lunar.Adapters.Unity.InputActionsAdapter
+  nameWithType: InputActionsAdapter
+- uid: Lunar.Adapters.Unity.InputActionsAdapter.#ctor(IInput,System.Collections.Generic.Dictionary{System.String,KeyCode[]})
+  name: InputActionsAdapter(IInput, Dictionary<string, KeyCode[]>)
+  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter__ctor_IInput_System_Collections_Generic_Dictionary_System_String_KeyCode____
+  commentId: M:Lunar.Adapters.Unity.InputActionsAdapter.#ctor(IInput,System.Collections.Generic.Dictionary{System.String,KeyCode[]})
+  name.vb: New(IInput, Dictionary(Of String, KeyCode()))
+  fullName: Lunar.Adapters.Unity.InputActionsAdapter.InputActionsAdapter(IInput, System.Collections.Generic.Dictionary<string, KeyCode[]>)
+  fullName.vb: Lunar.Adapters.Unity.InputActionsAdapter.New(IInput, System.Collections.Generic.Dictionary(Of String, KeyCode()))
+  nameWithType: InputActionsAdapter.InputActionsAdapter(IInput, Dictionary<string, KeyCode[]>)
+  nameWithType.vb: InputActionsAdapter.New(IInput, Dictionary(Of String, KeyCode()))
+- uid: Lunar.Adapters.Unity.InputActionsAdapter.#ctor*
+  name: InputActionsAdapter
+  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter__ctor_
+  commentId: Overload:Lunar.Adapters.Unity.InputActionsAdapter.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Lunar.Adapters.Unity.InputActionsAdapter.InputActionsAdapter
+  fullName.vb: Lunar.Adapters.Unity.InputActionsAdapter.New
+  nameWithType: InputActionsAdapter.InputActionsAdapter
+  nameWithType.vb: InputActionsAdapter.New
+- uid: Lunar.Adapters.Unity.InputActionsAdapter.Bindings
+  name: Bindings
+  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter_Bindings
+  commentId: P:Lunar.Adapters.Unity.InputActionsAdapter.Bindings
+  fullName: Lunar.Adapters.Unity.InputActionsAdapter.Bindings
+  nameWithType: InputActionsAdapter.Bindings
+- uid: Lunar.Adapters.Unity.InputActionsAdapter.Bindings*
+  name: Bindings
+  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter_Bindings_
+  commentId: Overload:Lunar.Adapters.Unity.InputActionsAdapter.Bindings
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.InputActionsAdapter.Bindings
+  nameWithType: InputActionsAdapter.Bindings
+- uid: Lunar.Adapters.Unity.InputActionsAdapter.ClearBindings
+  name: ClearBindings()
+  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter_ClearBindings
+  commentId: M:Lunar.Adapters.Unity.InputActionsAdapter.ClearBindings
+  fullName: Lunar.Adapters.Unity.InputActionsAdapter.ClearBindings()
+  nameWithType: InputActionsAdapter.ClearBindings()
+- uid: Lunar.Adapters.Unity.InputActionsAdapter.ClearBindings*
+  name: ClearBindings
+  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter_ClearBindings_
+  commentId: Overload:Lunar.Adapters.Unity.InputActionsAdapter.ClearBindings
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.InputActionsAdapter.ClearBindings
+  nameWithType: InputActionsAdapter.ClearBindings
+- uid: Lunar.Adapters.Unity.InputActionsAdapter.GetAction(System.String)
+  name: GetAction(string)
+  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter_GetAction_System_String_
+  commentId: M:Lunar.Adapters.Unity.InputActionsAdapter.GetAction(System.String)
+  name.vb: GetAction(String)
+  fullName: Lunar.Adapters.Unity.InputActionsAdapter.GetAction(string)
+  fullName.vb: Lunar.Adapters.Unity.InputActionsAdapter.GetAction(String)
+  nameWithType: InputActionsAdapter.GetAction(string)
+  nameWithType.vb: InputActionsAdapter.GetAction(String)
+- uid: Lunar.Adapters.Unity.InputActionsAdapter.GetAction*
+  name: GetAction
+  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter_GetAction_
+  commentId: Overload:Lunar.Adapters.Unity.InputActionsAdapter.GetAction
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.InputActionsAdapter.GetAction
+  nameWithType: InputActionsAdapter.GetAction
+- uid: Lunar.Adapters.Unity.InputActionsAdapter.GetActionDown(System.String)
+  name: GetActionDown(string)
+  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter_GetActionDown_System_String_
+  commentId: M:Lunar.Adapters.Unity.InputActionsAdapter.GetActionDown(System.String)
+  name.vb: GetActionDown(String)
+  fullName: Lunar.Adapters.Unity.InputActionsAdapter.GetActionDown(string)
+  fullName.vb: Lunar.Adapters.Unity.InputActionsAdapter.GetActionDown(String)
+  nameWithType: InputActionsAdapter.GetActionDown(string)
+  nameWithType.vb: InputActionsAdapter.GetActionDown(String)
+- uid: Lunar.Adapters.Unity.InputActionsAdapter.GetActionDown*
+  name: GetActionDown
+  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter_GetActionDown_
+  commentId: Overload:Lunar.Adapters.Unity.InputActionsAdapter.GetActionDown
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.InputActionsAdapter.GetActionDown
+  nameWithType: InputActionsAdapter.GetActionDown
+- uid: Lunar.Adapters.Unity.InputActionsAdapter.GetActionUp(System.String)
+  name: GetActionUp(string)
+  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter_GetActionUp_System_String_
+  commentId: M:Lunar.Adapters.Unity.InputActionsAdapter.GetActionUp(System.String)
+  name.vb: GetActionUp(String)
+  fullName: Lunar.Adapters.Unity.InputActionsAdapter.GetActionUp(string)
+  fullName.vb: Lunar.Adapters.Unity.InputActionsAdapter.GetActionUp(String)
+  nameWithType: InputActionsAdapter.GetActionUp(string)
+  nameWithType.vb: InputActionsAdapter.GetActionUp(String)
+- uid: Lunar.Adapters.Unity.InputActionsAdapter.GetActionUp*
+  name: GetActionUp
+  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter_GetActionUp_
+  commentId: Overload:Lunar.Adapters.Unity.InputActionsAdapter.GetActionUp
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.InputActionsAdapter.GetActionUp
+  nameWithType: InputActionsAdapter.GetActionUp
+- uid: Lunar.Adapters.Unity.InputActionsAdapter.Input
+  name: Input
+  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter_Input
+  commentId: P:Lunar.Adapters.Unity.InputActionsAdapter.Input
+  fullName: Lunar.Adapters.Unity.InputActionsAdapter.Input
+  nameWithType: InputActionsAdapter.Input
+- uid: Lunar.Adapters.Unity.InputActionsAdapter.Input*
+  name: Input
+  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter_Input_
+  commentId: Overload:Lunar.Adapters.Unity.InputActionsAdapter.Input
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.InputActionsAdapter.Input
+  nameWithType: InputActionsAdapter.Input
+- uid: Lunar.Adapters.Unity.InputActionsAdapter.RemoveBinding(System.String)
+  name: RemoveBinding(string)
+  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter_RemoveBinding_System_String_
+  commentId: M:Lunar.Adapters.Unity.InputActionsAdapter.RemoveBinding(System.String)
+  name.vb: RemoveBinding(String)
+  fullName: Lunar.Adapters.Unity.InputActionsAdapter.RemoveBinding(string)
+  fullName.vb: Lunar.Adapters.Unity.InputActionsAdapter.RemoveBinding(String)
+  nameWithType: InputActionsAdapter.RemoveBinding(string)
+  nameWithType.vb: InputActionsAdapter.RemoveBinding(String)
+- uid: Lunar.Adapters.Unity.InputActionsAdapter.RemoveBinding*
+  name: RemoveBinding
+  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter_RemoveBinding_
+  commentId: Overload:Lunar.Adapters.Unity.InputActionsAdapter.RemoveBinding
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.InputActionsAdapter.RemoveBinding
+  nameWithType: InputActionsAdapter.RemoveBinding
+- uid: Lunar.Adapters.Unity.InputActionsAdapter.SetBinding(System.String,KeyCode[])
+  name: SetBinding(string, params KeyCode[])
+  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter_SetBinding_System_String_KeyCode___
+  commentId: M:Lunar.Adapters.Unity.InputActionsAdapter.SetBinding(System.String,KeyCode[])
+  name.vb: SetBinding(String, ParamArray KeyCode())
+  fullName: Lunar.Adapters.Unity.InputActionsAdapter.SetBinding(string, params KeyCode[])
+  fullName.vb: Lunar.Adapters.Unity.InputActionsAdapter.SetBinding(String, ParamArray KeyCode())
+  nameWithType: InputActionsAdapter.SetBinding(string, params KeyCode[])
+  nameWithType.vb: InputActionsAdapter.SetBinding(String, ParamArray KeyCode())
+- uid: Lunar.Adapters.Unity.InputActionsAdapter.SetBinding*
+  name: SetBinding
+  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter_SetBinding_
+  commentId: Overload:Lunar.Adapters.Unity.InputActionsAdapter.SetBinding
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.InputActionsAdapter.SetBinding
+  nameWithType: InputActionsAdapter.SetBinding
+- uid: Lunar.Adapters.Unity.InputAdapter
+  name: InputAdapter
+  href: api/Lunar.Adapters.Unity.InputAdapter.html
+  commentId: T:Lunar.Adapters.Unity.InputAdapter
+  fullName: Lunar.Adapters.Unity.InputAdapter
+  nameWithType: InputAdapter
+- uid: Lunar.Adapters.Unity.InputAdapter.GetKey(KeyCode)
+  name: GetKey(KeyCode)
+  href: api/Lunar.Adapters.Unity.InputAdapter.html#Lunar_Adapters_Unity_InputAdapter_GetKey_KeyCode_
+  commentId: M:Lunar.Adapters.Unity.InputAdapter.GetKey(KeyCode)
+  fullName: Lunar.Adapters.Unity.InputAdapter.GetKey(KeyCode)
+  nameWithType: InputAdapter.GetKey(KeyCode)
+- uid: Lunar.Adapters.Unity.InputAdapter.GetKey*
+  name: GetKey
+  href: api/Lunar.Adapters.Unity.InputAdapter.html#Lunar_Adapters_Unity_InputAdapter_GetKey_
+  commentId: Overload:Lunar.Adapters.Unity.InputAdapter.GetKey
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.InputAdapter.GetKey
+  nameWithType: InputAdapter.GetKey
+- uid: Lunar.Adapters.Unity.InputAdapter.GetKeyDown(KeyCode)
+  name: GetKeyDown(KeyCode)
+  href: api/Lunar.Adapters.Unity.InputAdapter.html#Lunar_Adapters_Unity_InputAdapter_GetKeyDown_KeyCode_
+  commentId: M:Lunar.Adapters.Unity.InputAdapter.GetKeyDown(KeyCode)
+  fullName: Lunar.Adapters.Unity.InputAdapter.GetKeyDown(KeyCode)
+  nameWithType: InputAdapter.GetKeyDown(KeyCode)
+- uid: Lunar.Adapters.Unity.InputAdapter.GetKeyDown*
+  name: GetKeyDown
+  href: api/Lunar.Adapters.Unity.InputAdapter.html#Lunar_Adapters_Unity_InputAdapter_GetKeyDown_
+  commentId: Overload:Lunar.Adapters.Unity.InputAdapter.GetKeyDown
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.InputAdapter.GetKeyDown
+  nameWithType: InputAdapter.GetKeyDown
+- uid: Lunar.Adapters.Unity.InputAdapter.GetKeyUp(KeyCode)
+  name: GetKeyUp(KeyCode)
+  href: api/Lunar.Adapters.Unity.InputAdapter.html#Lunar_Adapters_Unity_InputAdapter_GetKeyUp_KeyCode_
+  commentId: M:Lunar.Adapters.Unity.InputAdapter.GetKeyUp(KeyCode)
+  fullName: Lunar.Adapters.Unity.InputAdapter.GetKeyUp(KeyCode)
+  nameWithType: InputAdapter.GetKeyUp(KeyCode)
+- uid: Lunar.Adapters.Unity.InputAdapter.GetKeyUp*
+  name: GetKeyUp
+  href: api/Lunar.Adapters.Unity.InputAdapter.html#Lunar_Adapters_Unity_InputAdapter_GetKeyUp_
+  commentId: Overload:Lunar.Adapters.Unity.InputAdapter.GetKeyUp
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.InputAdapter.GetKeyUp
+  nameWithType: InputAdapter.GetKeyUp
+- uid: Lunar.Adapters.Unity.KeyCodeConverter
+  name: KeyCodeConverter
+  href: api/Lunar.Adapters.Unity.KeyCodeConverter.html
+  commentId: T:Lunar.Adapters.Unity.KeyCodeConverter
+  fullName: Lunar.Adapters.Unity.KeyCodeConverter
+  nameWithType: KeyCodeConverter
+- uid: Lunar.Adapters.Unity.KeyCodeConverter.ToUnity(KeyCode)
+  name: ToUnity(KeyCode)
+  href: api/Lunar.Adapters.Unity.KeyCodeConverter.html#Lunar_Adapters_Unity_KeyCodeConverter_ToUnity_KeyCode_
+  commentId: M:Lunar.Adapters.Unity.KeyCodeConverter.ToUnity(KeyCode)
+  fullName: Lunar.Adapters.Unity.KeyCodeConverter.ToUnity(KeyCode)
+  nameWithType: KeyCodeConverter.ToUnity(KeyCode)
+- uid: Lunar.Adapters.Unity.KeyCodeConverter.ToUnity*
+  name: ToUnity
+  href: api/Lunar.Adapters.Unity.KeyCodeConverter.html#Lunar_Adapters_Unity_KeyCodeConverter_ToUnity_
+  commentId: Overload:Lunar.Adapters.Unity.KeyCodeConverter.ToUnity
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.KeyCodeConverter.ToUnity
+  nameWithType: KeyCodeConverter.ToUnity
+- uid: Lunar.Adapters.Unity.ResourcesAdapter
+  name: ResourcesAdapter
+  href: api/Lunar.Adapters.Unity.ResourcesAdapter.html
+  commentId: T:Lunar.Adapters.Unity.ResourcesAdapter
+  fullName: Lunar.Adapters.Unity.ResourcesAdapter
+  nameWithType: ResourcesAdapter
+- uid: Lunar.Adapters.Unity.ResourcesAdapter.Load*
+  name: Load
+  href: api/Lunar.Adapters.Unity.ResourcesAdapter.html#Lunar_Adapters_Unity_ResourcesAdapter_Load_
+  commentId: Overload:Lunar.Adapters.Unity.ResourcesAdapter.Load
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.ResourcesAdapter.Load
+  nameWithType: ResourcesAdapter.Load
+- uid: Lunar.Adapters.Unity.ResourcesAdapter.LoadAll*
+  name: LoadAll
+  href: api/Lunar.Adapters.Unity.ResourcesAdapter.html#Lunar_Adapters_Unity_ResourcesAdapter_LoadAll_
+  commentId: Overload:Lunar.Adapters.Unity.ResourcesAdapter.LoadAll
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.ResourcesAdapter.LoadAll
+  nameWithType: ResourcesAdapter.LoadAll
+- uid: Lunar.Adapters.Unity.ResourcesAdapter.LoadAllAsync*
+  name: LoadAllAsync
+  href: api/Lunar.Adapters.Unity.ResourcesAdapter.html#Lunar_Adapters_Unity_ResourcesAdapter_LoadAllAsync_
+  commentId: Overload:Lunar.Adapters.Unity.ResourcesAdapter.LoadAllAsync
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.ResourcesAdapter.LoadAllAsync
+  nameWithType: ResourcesAdapter.LoadAllAsync
+- uid: Lunar.Adapters.Unity.ResourcesAdapter.LoadAllAsync``1(System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  name: LoadAllAsync<T>(IEnumerable<string>, CancellationToken)
+  href: api/Lunar.Adapters.Unity.ResourcesAdapter.html#Lunar_Adapters_Unity_ResourcesAdapter_LoadAllAsync__1_System_Collections_Generic_IEnumerable_System_String__System_Threading_CancellationToken_
+  commentId: M:Lunar.Adapters.Unity.ResourcesAdapter.LoadAllAsync``1(System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  name.vb: LoadAllAsync(Of T)(IEnumerable(Of String), CancellationToken)
+  fullName: Lunar.Adapters.Unity.ResourcesAdapter.LoadAllAsync<T>(System.Collections.Generic.IEnumerable<string>, System.Threading.CancellationToken)
+  fullName.vb: Lunar.Adapters.Unity.ResourcesAdapter.LoadAllAsync(Of T)(System.Collections.Generic.IEnumerable(Of String), System.Threading.CancellationToken)
+  nameWithType: ResourcesAdapter.LoadAllAsync<T>(IEnumerable<string>, CancellationToken)
+  nameWithType.vb: ResourcesAdapter.LoadAllAsync(Of T)(IEnumerable(Of String), CancellationToken)
+- uid: Lunar.Adapters.Unity.ResourcesAdapter.LoadAllAsync``1(System.String,System.Threading.CancellationToken)
+  name: LoadAllAsync<T>(string, CancellationToken)
+  href: api/Lunar.Adapters.Unity.ResourcesAdapter.html#Lunar_Adapters_Unity_ResourcesAdapter_LoadAllAsync__1_System_String_System_Threading_CancellationToken_
+  commentId: M:Lunar.Adapters.Unity.ResourcesAdapter.LoadAllAsync``1(System.String,System.Threading.CancellationToken)
+  name.vb: LoadAllAsync(Of T)(String, CancellationToken)
+  fullName: Lunar.Adapters.Unity.ResourcesAdapter.LoadAllAsync<T>(string, System.Threading.CancellationToken)
+  fullName.vb: Lunar.Adapters.Unity.ResourcesAdapter.LoadAllAsync(Of T)(String, System.Threading.CancellationToken)
+  nameWithType: ResourcesAdapter.LoadAllAsync<T>(string, CancellationToken)
+  nameWithType.vb: ResourcesAdapter.LoadAllAsync(Of T)(String, CancellationToken)
+- uid: Lunar.Adapters.Unity.ResourcesAdapter.LoadAll``1(System.Collections.Generic.IEnumerable{System.String})
+  name: LoadAll<T>(IEnumerable<string>)
+  href: api/Lunar.Adapters.Unity.ResourcesAdapter.html#Lunar_Adapters_Unity_ResourcesAdapter_LoadAll__1_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:Lunar.Adapters.Unity.ResourcesAdapter.LoadAll``1(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: LoadAll(Of T)(IEnumerable(Of String))
+  fullName: Lunar.Adapters.Unity.ResourcesAdapter.LoadAll<T>(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: Lunar.Adapters.Unity.ResourcesAdapter.LoadAll(Of T)(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: ResourcesAdapter.LoadAll<T>(IEnumerable<string>)
+  nameWithType.vb: ResourcesAdapter.LoadAll(Of T)(IEnumerable(Of String))
+- uid: Lunar.Adapters.Unity.ResourcesAdapter.LoadAll``1(System.String)
+  name: LoadAll<T>(string)
+  href: api/Lunar.Adapters.Unity.ResourcesAdapter.html#Lunar_Adapters_Unity_ResourcesAdapter_LoadAll__1_System_String_
+  commentId: M:Lunar.Adapters.Unity.ResourcesAdapter.LoadAll``1(System.String)
+  name.vb: LoadAll(Of T)(String)
+  fullName: Lunar.Adapters.Unity.ResourcesAdapter.LoadAll<T>(string)
+  fullName.vb: Lunar.Adapters.Unity.ResourcesAdapter.LoadAll(Of T)(String)
+  nameWithType: ResourcesAdapter.LoadAll<T>(string)
+  nameWithType.vb: ResourcesAdapter.LoadAll(Of T)(String)
+- uid: Lunar.Adapters.Unity.ResourcesAdapter.LoadAsync*
+  name: LoadAsync
+  href: api/Lunar.Adapters.Unity.ResourcesAdapter.html#Lunar_Adapters_Unity_ResourcesAdapter_LoadAsync_
+  commentId: Overload:Lunar.Adapters.Unity.ResourcesAdapter.LoadAsync
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.ResourcesAdapter.LoadAsync
+  nameWithType: ResourcesAdapter.LoadAsync
+- uid: Lunar.Adapters.Unity.ResourcesAdapter.LoadAsync``1(System.String,System.Threading.CancellationToken)
+  name: LoadAsync<T>(string, CancellationToken)
+  href: api/Lunar.Adapters.Unity.ResourcesAdapter.html#Lunar_Adapters_Unity_ResourcesAdapter_LoadAsync__1_System_String_System_Threading_CancellationToken_
+  commentId: M:Lunar.Adapters.Unity.ResourcesAdapter.LoadAsync``1(System.String,System.Threading.CancellationToken)
+  name.vb: LoadAsync(Of T)(String, CancellationToken)
+  fullName: Lunar.Adapters.Unity.ResourcesAdapter.LoadAsync<T>(string, System.Threading.CancellationToken)
+  fullName.vb: Lunar.Adapters.Unity.ResourcesAdapter.LoadAsync(Of T)(String, System.Threading.CancellationToken)
+  nameWithType: ResourcesAdapter.LoadAsync<T>(string, CancellationToken)
+  nameWithType.vb: ResourcesAdapter.LoadAsync(Of T)(String, CancellationToken)
+- uid: Lunar.Adapters.Unity.ResourcesAdapter.Load``1(System.String)
+  name: Load<T>(string)
+  href: api/Lunar.Adapters.Unity.ResourcesAdapter.html#Lunar_Adapters_Unity_ResourcesAdapter_Load__1_System_String_
+  commentId: M:Lunar.Adapters.Unity.ResourcesAdapter.Load``1(System.String)
+  name.vb: Load(Of T)(String)
+  fullName: Lunar.Adapters.Unity.ResourcesAdapter.Load<T>(string)
+  fullName.vb: Lunar.Adapters.Unity.ResourcesAdapter.Load(Of T)(String)
+  nameWithType: ResourcesAdapter.Load<T>(string)
+  nameWithType.vb: ResourcesAdapter.Load(Of T)(String)
+- uid: Lunar.Adapters.Unity.ResourcesAdapter.Release*
+  name: Release
+  href: api/Lunar.Adapters.Unity.ResourcesAdapter.html#Lunar_Adapters_Unity_ResourcesAdapter_Release_
+  commentId: Overload:Lunar.Adapters.Unity.ResourcesAdapter.Release
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.ResourcesAdapter.Release
+  nameWithType: ResourcesAdapter.Release
+- uid: Lunar.Adapters.Unity.ResourcesAdapter.Release``1(``0)
+  name: Release<T>(T)
+  href: api/Lunar.Adapters.Unity.ResourcesAdapter.html#Lunar_Adapters_Unity_ResourcesAdapter_Release__1___0_
+  commentId: M:Lunar.Adapters.Unity.ResourcesAdapter.Release``1(``0)
+  name.vb: Release(Of T)(T)
+  fullName: Lunar.Adapters.Unity.ResourcesAdapter.Release<T>(T)
+  fullName.vb: Lunar.Adapters.Unity.ResourcesAdapter.Release(Of T)(T)
+  nameWithType: ResourcesAdapter.Release<T>(T)
+  nameWithType.vb: ResourcesAdapter.Release(Of T)(T)
+- uid: Lunar.Adapters.Unity.ResourcesUtility
+  name: ResourcesUtility
+  href: api/Lunar.Adapters.Unity.ResourcesUtility.html
+  commentId: T:Lunar.Adapters.Unity.ResourcesUtility
+  fullName: Lunar.Adapters.Unity.ResourcesUtility
+  nameWithType: ResourcesUtility
+- uid: Lunar.Adapters.Unity.ResourcesUtility.ValidateUnityObjectType*
+  name: ValidateUnityObjectType
+  href: api/Lunar.Adapters.Unity.ResourcesUtility.html#Lunar_Adapters_Unity_ResourcesUtility_ValidateUnityObjectType_
+  commentId: Overload:Lunar.Adapters.Unity.ResourcesUtility.ValidateUnityObjectType
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.ResourcesUtility.ValidateUnityObjectType
+  nameWithType: ResourcesUtility.ValidateUnityObjectType
+- uid: Lunar.Adapters.Unity.ResourcesUtility.ValidateUnityObjectType``1
+  name: ValidateUnityObjectType<T>()
+  href: api/Lunar.Adapters.Unity.ResourcesUtility.html#Lunar_Adapters_Unity_ResourcesUtility_ValidateUnityObjectType__1
+  commentId: M:Lunar.Adapters.Unity.ResourcesUtility.ValidateUnityObjectType``1
+  name.vb: ValidateUnityObjectType(Of T)()
+  fullName: Lunar.Adapters.Unity.ResourcesUtility.ValidateUnityObjectType<T>()
+  fullName.vb: Lunar.Adapters.Unity.ResourcesUtility.ValidateUnityObjectType(Of T)()
+  nameWithType: ResourcesUtility.ValidateUnityObjectType<T>()
+  nameWithType.vb: ResourcesUtility.ValidateUnityObjectType(Of T)()
+- uid: Lunar.Adapters.Unity.ResourcesUtility.ValidateUnityObjectType``1(System.String)
+  name: ValidateUnityObjectType<T>(string)
+  href: api/Lunar.Adapters.Unity.ResourcesUtility.html#Lunar_Adapters_Unity_ResourcesUtility_ValidateUnityObjectType__1_System_String_
+  commentId: M:Lunar.Adapters.Unity.ResourcesUtility.ValidateUnityObjectType``1(System.String)
+  name.vb: ValidateUnityObjectType(Of T)(String)
+  fullName: Lunar.Adapters.Unity.ResourcesUtility.ValidateUnityObjectType<T>(string)
+  fullName.vb: Lunar.Adapters.Unity.ResourcesUtility.ValidateUnityObjectType(Of T)(String)
+  nameWithType: ResourcesUtility.ValidateUnityObjectType<T>(string)
+  nameWithType.vb: ResourcesUtility.ValidateUnityObjectType(Of T)(String)
+- uid: Lunar.Adapters.Unity.ServiceRegistry
+  name: ServiceRegistry
+  href: api/Lunar.Adapters.Unity.ServiceRegistry.html
+  commentId: T:Lunar.Adapters.Unity.ServiceRegistry
+  fullName: Lunar.Adapters.Unity.ServiceRegistry
+  nameWithType: ServiceRegistry
+- uid: Lunar.Adapters.Unity.ServiceRegistry.InputActions
+  name: InputActions
+  href: api/Lunar.Adapters.Unity.ServiceRegistry.html#Lunar_Adapters_Unity_ServiceRegistry_InputActions
+  commentId: P:Lunar.Adapters.Unity.ServiceRegistry.InputActions
+  fullName: Lunar.Adapters.Unity.ServiceRegistry.InputActions
+  nameWithType: ServiceRegistry.InputActions
+- uid: Lunar.Adapters.Unity.ServiceRegistry.InputActions*
+  name: InputActions
+  href: api/Lunar.Adapters.Unity.ServiceRegistry.html#Lunar_Adapters_Unity_ServiceRegistry_InputActions_
+  commentId: Overload:Lunar.Adapters.Unity.ServiceRegistry.InputActions
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.ServiceRegistry.InputActions
+  nameWithType: ServiceRegistry.InputActions
+- uid: Lunar.Adapters.Unity.ServiceRegistry.Logger
+  name: Logger
+  href: api/Lunar.Adapters.Unity.ServiceRegistry.html#Lunar_Adapters_Unity_ServiceRegistry_Logger
+  commentId: P:Lunar.Adapters.Unity.ServiceRegistry.Logger
+  fullName: Lunar.Adapters.Unity.ServiceRegistry.Logger
+  nameWithType: ServiceRegistry.Logger
+- uid: Lunar.Adapters.Unity.ServiceRegistry.Logger*
+  name: Logger
+  href: api/Lunar.Adapters.Unity.ServiceRegistry.html#Lunar_Adapters_Unity_ServiceRegistry_Logger_
+  commentId: Overload:Lunar.Adapters.Unity.ServiceRegistry.Logger
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.ServiceRegistry.Logger
+  nameWithType: ServiceRegistry.Logger
+- uid: Lunar.Adapters.Unity.ServiceRegistry.Resources
+  name: Resources
+  href: api/Lunar.Adapters.Unity.ServiceRegistry.html#Lunar_Adapters_Unity_ServiceRegistry_Resources
+  commentId: P:Lunar.Adapters.Unity.ServiceRegistry.Resources
+  fullName: Lunar.Adapters.Unity.ServiceRegistry.Resources
+  nameWithType: ServiceRegistry.Resources
+- uid: Lunar.Adapters.Unity.ServiceRegistry.Resources*
+  name: Resources
+  href: api/Lunar.Adapters.Unity.ServiceRegistry.html#Lunar_Adapters_Unity_ServiceRegistry_Resources_
+  commentId: Overload:Lunar.Adapters.Unity.ServiceRegistry.Resources
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.ServiceRegistry.Resources
+  nameWithType: ServiceRegistry.Resources
+- uid: Lunar.Adapters.Unity.ServiceRegistry.ResourcesAsync
+  name: ResourcesAsync
+  href: api/Lunar.Adapters.Unity.ServiceRegistry.html#Lunar_Adapters_Unity_ServiceRegistry_ResourcesAsync
+  commentId: P:Lunar.Adapters.Unity.ServiceRegistry.ResourcesAsync
+  fullName: Lunar.Adapters.Unity.ServiceRegistry.ResourcesAsync
+  nameWithType: ServiceRegistry.ResourcesAsync
+- uid: Lunar.Adapters.Unity.ServiceRegistry.ResourcesAsync*
+  name: ResourcesAsync
+  href: api/Lunar.Adapters.Unity.ServiceRegistry.html#Lunar_Adapters_Unity_ServiceRegistry_ResourcesAsync_
+  commentId: Overload:Lunar.Adapters.Unity.ServiceRegistry.ResourcesAsync
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.ServiceRegistry.ResourcesAsync
+  nameWithType: ServiceRegistry.ResourcesAsync
+- uid: Lunar.Adapters.Unity.Systems
+  name: Lunar.Adapters.Unity.Systems
+  href: api/Lunar.Adapters.Unity.Systems.html
+  commentId: N:Lunar.Adapters.Unity.Systems
+  fullName: Lunar.Adapters.Unity.Systems
+  nameWithType: Lunar.Adapters.Unity.Systems
+- uid: Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem
+  name: DebugCreateObjectSystem
+  href: api/Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.html
+  commentId: T:Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem
+  fullName: Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem
+  nameWithType: DebugCreateObjectSystem
+- uid: Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.#ctor(World)
+  name: DebugCreateObjectSystem(World)
+  href: api/Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.html#Lunar_Adapters_Unity_Systems_DebugCreateObjectSystem__ctor_World_
+  commentId: M:Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.#ctor(World)
+  name.vb: New(World)
+  fullName: Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.DebugCreateObjectSystem(World)
+  fullName.vb: Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.New(World)
+  nameWithType: DebugCreateObjectSystem.DebugCreateObjectSystem(World)
+  nameWithType.vb: DebugCreateObjectSystem.New(World)
+- uid: Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.#ctor*
+  name: DebugCreateObjectSystem
+  href: api/Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.html#Lunar_Adapters_Unity_Systems_DebugCreateObjectSystem__ctor_
+  commentId: Overload:Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.DebugCreateObjectSystem
+  fullName.vb: Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.New
+  nameWithType: DebugCreateObjectSystem.DebugCreateObjectSystem
+  nameWithType.vb: DebugCreateObjectSystem.New
+- uid: Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.Initialize
+  name: Initialize()
+  href: api/Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.html#Lunar_Adapters_Unity_Systems_DebugCreateObjectSystem_Initialize
+  commentId: M:Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.Initialize
+  fullName: Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.Initialize()
+  nameWithType: DebugCreateObjectSystem.Initialize()
+- uid: Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.Initialize*
+  name: Initialize
+  href: api/Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.html#Lunar_Adapters_Unity_Systems_DebugCreateObjectSystem_Initialize_
+  commentId: Overload:Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.Initialize
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.Initialize
+  nameWithType: DebugCreateObjectSystem.Initialize
+- uid: Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.Update(System.Single@)
+  name: Update(in float)
+  href: api/Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.html#Lunar_Adapters_Unity_Systems_DebugCreateObjectSystem_Update_System_Single__
+  commentId: M:Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.Update(System.Single@)
+  name.vb: Update(Single)
+  fullName: Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.Update(in float)
+  fullName.vb: Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.Update(Single)
+  nameWithType: DebugCreateObjectSystem.Update(in float)
+  nameWithType.vb: DebugCreateObjectSystem.Update(Single)
+- uid: Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.Update*
+  name: Update
+  href: api/Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.html#Lunar_Adapters_Unity_Systems_DebugCreateObjectSystem_Update_
+  commentId: Overload:Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.Update
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.Update
+  nameWithType: DebugCreateObjectSystem.Update
+- uid: Lunar.Adapters.Unity.Systems.GameObjectSyncSystem
+  name: GameObjectSyncSystem
+  href: api/Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.html
+  commentId: T:Lunar.Adapters.Unity.Systems.GameObjectSyncSystem
+  fullName: Lunar.Adapters.Unity.Systems.GameObjectSyncSystem
+  nameWithType: GameObjectSyncSystem
+- uid: Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.#ctor(World)
+  name: GameObjectSyncSystem(World)
+  href: api/Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.html#Lunar_Adapters_Unity_Systems_GameObjectSyncSystem__ctor_World_
+  commentId: M:Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.#ctor(World)
+  name.vb: New(World)
+  fullName: Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.GameObjectSyncSystem(World)
+  fullName.vb: Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.New(World)
+  nameWithType: GameObjectSyncSystem.GameObjectSyncSystem(World)
+  nameWithType.vb: GameObjectSyncSystem.New(World)
+- uid: Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.#ctor*
+  name: GameObjectSyncSystem
+  href: api/Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.html#Lunar_Adapters_Unity_Systems_GameObjectSyncSystem__ctor_
+  commentId: Overload:Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.GameObjectSyncSystem
+  fullName.vb: Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.New
+  nameWithType: GameObjectSyncSystem.GameObjectSyncSystem
+  nameWithType.vb: GameObjectSyncSystem.New
+- uid: Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.SyncName(GameObjectComponent,NameComponent)
+  name: SyncName(GameObjectComponent, NameComponent)
+  href: api/Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.html#Lunar_Adapters_Unity_Systems_GameObjectSyncSystem_SyncName_GameObjectComponent_NameComponent_
+  commentId: M:Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.SyncName(GameObjectComponent,NameComponent)
+  fullName: Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.SyncName(GameObjectComponent, NameComponent)
+  nameWithType: GameObjectSyncSystem.SyncName(GameObjectComponent, NameComponent)
+- uid: Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.SyncName*
+  name: SyncName
+  href: api/Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.html#Lunar_Adapters_Unity_Systems_GameObjectSyncSystem_SyncName_
+  commentId: Overload:Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.SyncName
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.SyncName
+  nameWithType: GameObjectSyncSystem.SyncName
+- uid: Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.SyncTransform(GameObjectComponent,TransformComponent)
+  name: SyncTransform(GameObjectComponent, TransformComponent)
+  href: api/Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.html#Lunar_Adapters_Unity_Systems_GameObjectSyncSystem_SyncTransform_GameObjectComponent_TransformComponent_
+  commentId: M:Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.SyncTransform(GameObjectComponent,TransformComponent)
+  fullName: Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.SyncTransform(GameObjectComponent, TransformComponent)
+  nameWithType: GameObjectSyncSystem.SyncTransform(GameObjectComponent, TransformComponent)
+- uid: Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.SyncTransform*
+  name: SyncTransform
+  href: api/Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.html#Lunar_Adapters_Unity_Systems_GameObjectSyncSystem_SyncTransform_
+  commentId: Overload:Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.SyncTransform
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.SyncTransform
+  nameWithType: GameObjectSyncSystem.SyncTransform
+- uid: Lunar.Adapters.Unity.Systems.SpriteCleanSystem
+  name: SpriteCleanSystem
+  href: api/Lunar.Adapters.Unity.Systems.SpriteCleanSystem.html
+  commentId: T:Lunar.Adapters.Unity.Systems.SpriteCleanSystem
+  fullName: Lunar.Adapters.Unity.Systems.SpriteCleanSystem
+  nameWithType: SpriteCleanSystem
+- uid: Lunar.Adapters.Unity.Systems.SpriteCleanSystem.#ctor(World)
+  name: SpriteCleanSystem(World)
+  href: api/Lunar.Adapters.Unity.Systems.SpriteCleanSystem.html#Lunar_Adapters_Unity_Systems_SpriteCleanSystem__ctor_World_
+  commentId: M:Lunar.Adapters.Unity.Systems.SpriteCleanSystem.#ctor(World)
+  name.vb: New(World)
+  fullName: Lunar.Adapters.Unity.Systems.SpriteCleanSystem.SpriteCleanSystem(World)
+  fullName.vb: Lunar.Adapters.Unity.Systems.SpriteCleanSystem.New(World)
+  nameWithType: SpriteCleanSystem.SpriteCleanSystem(World)
+  nameWithType.vb: SpriteCleanSystem.New(World)
+- uid: Lunar.Adapters.Unity.Systems.SpriteCleanSystem.#ctor*
+  name: SpriteCleanSystem
+  href: api/Lunar.Adapters.Unity.Systems.SpriteCleanSystem.html#Lunar_Adapters_Unity_Systems_SpriteCleanSystem__ctor_
+  commentId: Overload:Lunar.Adapters.Unity.Systems.SpriteCleanSystem.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Lunar.Adapters.Unity.Systems.SpriteCleanSystem.SpriteCleanSystem
+  fullName.vb: Lunar.Adapters.Unity.Systems.SpriteCleanSystem.New
+  nameWithType: SpriteCleanSystem.SpriteCleanSystem
+  nameWithType.vb: SpriteCleanSystem.New
+- uid: Lunar.Adapters.Unity.Systems.SpriteCleanSystem.CleanSprite(SpriteComponent)
+  name: CleanSprite(SpriteComponent)
+  href: api/Lunar.Adapters.Unity.Systems.SpriteCleanSystem.html#Lunar_Adapters_Unity_Systems_SpriteCleanSystem_CleanSprite_SpriteComponent_
+  commentId: M:Lunar.Adapters.Unity.Systems.SpriteCleanSystem.CleanSprite(SpriteComponent)
+  fullName: Lunar.Adapters.Unity.Systems.SpriteCleanSystem.CleanSprite(SpriteComponent)
+  nameWithType: SpriteCleanSystem.CleanSprite(SpriteComponent)
+- uid: Lunar.Adapters.Unity.Systems.SpriteCleanSystem.CleanSprite*
+  name: CleanSprite
+  href: api/Lunar.Adapters.Unity.Systems.SpriteCleanSystem.html#Lunar_Adapters_Unity_Systems_SpriteCleanSystem_CleanSprite_
+  commentId: Overload:Lunar.Adapters.Unity.Systems.SpriteCleanSystem.CleanSprite
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.Systems.SpriteCleanSystem.CleanSprite
+  nameWithType: SpriteCleanSystem.CleanSprite
+- uid: Lunar.Adapters.Unity.Systems.SpriteSyncSystem
+  name: SpriteSyncSystem
+  href: api/Lunar.Adapters.Unity.Systems.SpriteSyncSystem.html
+  commentId: T:Lunar.Adapters.Unity.Systems.SpriteSyncSystem
+  fullName: Lunar.Adapters.Unity.Systems.SpriteSyncSystem
+  nameWithType: SpriteSyncSystem
+- uid: Lunar.Adapters.Unity.Systems.SpriteSyncSystem.#ctor(World,IResources,System.Nullable{ILogger})
+  name: SpriteSyncSystem(World, IResources, ILogger?)
+  href: api/Lunar.Adapters.Unity.Systems.SpriteSyncSystem.html#Lunar_Adapters_Unity_Systems_SpriteSyncSystem__ctor_World_IResources_System_Nullable_ILogger__
+  commentId: M:Lunar.Adapters.Unity.Systems.SpriteSyncSystem.#ctor(World,IResources,System.Nullable{ILogger})
+  name.vb: New(World, IResources, ILogger?)
+  fullName: Lunar.Adapters.Unity.Systems.SpriteSyncSystem.SpriteSyncSystem(World, IResources, ILogger?)
+  fullName.vb: Lunar.Adapters.Unity.Systems.SpriteSyncSystem.New(World, IResources, ILogger?)
+  nameWithType: SpriteSyncSystem.SpriteSyncSystem(World, IResources, ILogger?)
+  nameWithType.vb: SpriteSyncSystem.New(World, IResources, ILogger?)
+- uid: Lunar.Adapters.Unity.Systems.SpriteSyncSystem.#ctor(World,IResourcesAsync,System.Nullable{ILogger})
+  name: SpriteSyncSystem(World, IResourcesAsync, ILogger?)
+  href: api/Lunar.Adapters.Unity.Systems.SpriteSyncSystem.html#Lunar_Adapters_Unity_Systems_SpriteSyncSystem__ctor_World_IResourcesAsync_System_Nullable_ILogger__
+  commentId: M:Lunar.Adapters.Unity.Systems.SpriteSyncSystem.#ctor(World,IResourcesAsync,System.Nullable{ILogger})
+  name.vb: New(World, IResourcesAsync, ILogger?)
+  fullName: Lunar.Adapters.Unity.Systems.SpriteSyncSystem.SpriteSyncSystem(World, IResourcesAsync, ILogger?)
+  fullName.vb: Lunar.Adapters.Unity.Systems.SpriteSyncSystem.New(World, IResourcesAsync, ILogger?)
+  nameWithType: SpriteSyncSystem.SpriteSyncSystem(World, IResourcesAsync, ILogger?)
+  nameWithType.vb: SpriteSyncSystem.New(World, IResourcesAsync, ILogger?)
+- uid: Lunar.Adapters.Unity.Systems.SpriteSyncSystem.#ctor*
+  name: SpriteSyncSystem
+  href: api/Lunar.Adapters.Unity.Systems.SpriteSyncSystem.html#Lunar_Adapters_Unity_Systems_SpriteSyncSystem__ctor_
+  commentId: Overload:Lunar.Adapters.Unity.Systems.SpriteSyncSystem.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Lunar.Adapters.Unity.Systems.SpriteSyncSystem.SpriteSyncSystem
+  fullName.vb: Lunar.Adapters.Unity.Systems.SpriteSyncSystem.New
+  nameWithType: SpriteSyncSystem.SpriteSyncSystem
+  nameWithType.vb: SpriteSyncSystem.New
+- uid: Lunar.Adapters.Unity.Systems.SpriteSyncSystem.SyncSprite(SpriteComponent)
+  name: SyncSprite(SpriteComponent)
+  href: api/Lunar.Adapters.Unity.Systems.SpriteSyncSystem.html#Lunar_Adapters_Unity_Systems_SpriteSyncSystem_SyncSprite_SpriteComponent_
+  commentId: M:Lunar.Adapters.Unity.Systems.SpriteSyncSystem.SyncSprite(SpriteComponent)
+  fullName: Lunar.Adapters.Unity.Systems.SpriteSyncSystem.SyncSprite(SpriteComponent)
+  nameWithType: SpriteSyncSystem.SyncSprite(SpriteComponent)
+- uid: Lunar.Adapters.Unity.Systems.SpriteSyncSystem.SyncSprite*
+  name: SyncSprite
+  href: api/Lunar.Adapters.Unity.Systems.SpriteSyncSystem.html#Lunar_Adapters_Unity_Systems_SpriteSyncSystem_SyncSprite_
+  commentId: Overload:Lunar.Adapters.Unity.Systems.SpriteSyncSystem.SyncSprite
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.Systems.SpriteSyncSystem.SyncSprite
+  nameWithType: SpriteSyncSystem.SyncSprite
+- uid: Lunar.Adapters.Unity.Tests
+  name: Lunar.Adapters.Unity.Tests
+  href: api/Lunar.Adapters.Unity.Tests.html
+  commentId: N:Lunar.Adapters.Unity.Tests
+  fullName: Lunar.Adapters.Unity.Tests
+  nameWithType: Lunar.Adapters.Unity.Tests
+- uid: Lunar.Adapters.Unity.Tests.KeyCodeConverterTests
+  name: KeyCodeConverterTests
+  href: api/Lunar.Adapters.Unity.Tests.KeyCodeConverterTests.html
+  commentId: T:Lunar.Adapters.Unity.Tests.KeyCodeConverterTests
+  fullName: Lunar.Adapters.Unity.Tests.KeyCodeConverterTests
+  nameWithType: KeyCodeConverterTests
+- uid: Lunar.Adapters.Unity.Tests.KeyCodeConverterTests.All_LunarKeyCodes_MapTo_UnityEngineKeyCode
+  name: All_LunarKeyCodes_MapTo_UnityEngineKeyCode()
+  href: api/Lunar.Adapters.Unity.Tests.KeyCodeConverterTests.html#Lunar_Adapters_Unity_Tests_KeyCodeConverterTests_All_LunarKeyCodes_MapTo_UnityEngineKeyCode
+  commentId: M:Lunar.Adapters.Unity.Tests.KeyCodeConverterTests.All_LunarKeyCodes_MapTo_UnityEngineKeyCode
+  fullName: Lunar.Adapters.Unity.Tests.KeyCodeConverterTests.All_LunarKeyCodes_MapTo_UnityEngineKeyCode()
+  nameWithType: KeyCodeConverterTests.All_LunarKeyCodes_MapTo_UnityEngineKeyCode()
+- uid: Lunar.Adapters.Unity.Tests.KeyCodeConverterTests.All_LunarKeyCodes_MapTo_UnityEngineKeyCode*
+  name: All_LunarKeyCodes_MapTo_UnityEngineKeyCode
+  href: api/Lunar.Adapters.Unity.Tests.KeyCodeConverterTests.html#Lunar_Adapters_Unity_Tests_KeyCodeConverterTests_All_LunarKeyCodes_MapTo_UnityEngineKeyCode_
+  commentId: Overload:Lunar.Adapters.Unity.Tests.KeyCodeConverterTests.All_LunarKeyCodes_MapTo_UnityEngineKeyCode
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.Tests.KeyCodeConverterTests.All_LunarKeyCodes_MapTo_UnityEngineKeyCode
+  nameWithType: KeyCodeConverterTests.All_LunarKeyCodes_MapTo_UnityEngineKeyCode
+- uid: Lunar.Adapters.Unity.Tests.ResourcesAdapterTests
+  name: ResourcesAdapterTests
+  href: api/Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.html
+  commentId: T:Lunar.Adapters.Unity.Tests.ResourcesAdapterTests
+  fullName: Lunar.Adapters.Unity.Tests.ResourcesAdapterTests
+  nameWithType: ResourcesAdapterTests
+- uid: Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.LoadAll_ByFolder_ReturnsAll
+  name: LoadAll_ByFolder_ReturnsAll()
+  href: api/Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.html#Lunar_Adapters_Unity_Tests_ResourcesAdapterTests_LoadAll_ByFolder_ReturnsAll
+  commentId: M:Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.LoadAll_ByFolder_ReturnsAll
+  fullName: Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.LoadAll_ByFolder_ReturnsAll()
+  nameWithType: ResourcesAdapterTests.LoadAll_ByFolder_ReturnsAll()
+- uid: Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.LoadAll_ByFolder_ReturnsAll*
+  name: LoadAll_ByFolder_ReturnsAll
+  href: api/Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.html#Lunar_Adapters_Unity_Tests_ResourcesAdapterTests_LoadAll_ByFolder_ReturnsAll_
+  commentId: Overload:Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.LoadAll_ByFolder_ReturnsAll
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.LoadAll_ByFolder_ReturnsAll
+  nameWithType: ResourcesAdapterTests.LoadAll_ByFolder_ReturnsAll
+- uid: Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.LoadAll_ByPathsEnumerable_ReturnsEach
+  name: LoadAll_ByPathsEnumerable_ReturnsEach()
+  href: api/Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.html#Lunar_Adapters_Unity_Tests_ResourcesAdapterTests_LoadAll_ByPathsEnumerable_ReturnsEach
+  commentId: M:Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.LoadAll_ByPathsEnumerable_ReturnsEach
+  fullName: Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.LoadAll_ByPathsEnumerable_ReturnsEach()
+  nameWithType: ResourcesAdapterTests.LoadAll_ByPathsEnumerable_ReturnsEach()
+- uid: Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.LoadAll_ByPathsEnumerable_ReturnsEach*
+  name: LoadAll_ByPathsEnumerable_ReturnsEach
+  href: api/Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.html#Lunar_Adapters_Unity_Tests_ResourcesAdapterTests_LoadAll_ByPathsEnumerable_ReturnsEach_
+  commentId: Overload:Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.LoadAll_ByPathsEnumerable_ReturnsEach
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.LoadAll_ByPathsEnumerable_ReturnsEach
+  nameWithType: ResourcesAdapterTests.LoadAll_ByPathsEnumerable_ReturnsEach
+- uid: Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.Load_TextAsset_ReturnsAsset
+  name: Load_TextAsset_ReturnsAsset()
+  href: api/Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.html#Lunar_Adapters_Unity_Tests_ResourcesAdapterTests_Load_TextAsset_ReturnsAsset
+  commentId: M:Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.Load_TextAsset_ReturnsAsset
+  fullName: Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.Load_TextAsset_ReturnsAsset()
+  nameWithType: ResourcesAdapterTests.Load_TextAsset_ReturnsAsset()
+- uid: Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.Load_TextAsset_ReturnsAsset*
+  name: Load_TextAsset_ReturnsAsset
+  href: api/Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.html#Lunar_Adapters_Unity_Tests_ResourcesAdapterTests_Load_TextAsset_ReturnsAsset_
+  commentId: Overload:Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.Load_TextAsset_ReturnsAsset
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.Load_TextAsset_ReturnsAsset
+  nameWithType: ResourcesAdapterTests.Load_TextAsset_ReturnsAsset
+- uid: Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.Release_TextAsset_DoesNotThrow
+  name: Release_TextAsset_DoesNotThrow()
+  href: api/Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.html#Lunar_Adapters_Unity_Tests_ResourcesAdapterTests_Release_TextAsset_DoesNotThrow
+  commentId: M:Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.Release_TextAsset_DoesNotThrow
+  fullName: Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.Release_TextAsset_DoesNotThrow()
+  nameWithType: ResourcesAdapterTests.Release_TextAsset_DoesNotThrow()
+- uid: Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.Release_TextAsset_DoesNotThrow*
+  name: Release_TextAsset_DoesNotThrow
+  href: api/Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.html#Lunar_Adapters_Unity_Tests_ResourcesAdapterTests_Release_TextAsset_DoesNotThrow_
+  commentId: Overload:Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.Release_TextAsset_DoesNotThrow
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.Release_TextAsset_DoesNotThrow
+  nameWithType: ResourcesAdapterTests.Release_TextAsset_DoesNotThrow
+- uid: Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.SetUp
+  name: SetUp()
+  href: api/Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.html#Lunar_Adapters_Unity_Tests_ResourcesAdapterTests_SetUp
+  commentId: M:Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.SetUp
+  fullName: Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.SetUp()
+  nameWithType: ResourcesAdapterTests.SetUp()
+- uid: Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.SetUp*
+  name: SetUp
+  href: api/Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.html#Lunar_Adapters_Unity_Tests_ResourcesAdapterTests_SetUp_
+  commentId: Overload:Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.SetUp
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.SetUp
+  nameWithType: ResourcesAdapterTests.SetUp
+- uid: Lunar.Adapters.Unity.Tests.ResourcesUtilityTests
+  name: ResourcesUtilityTests
+  href: api/Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.html
+  commentId: T:Lunar.Adapters.Unity.Tests.ResourcesUtilityTests
+  fullName: Lunar.Adapters.Unity.Tests.ResourcesUtilityTests
+  nameWithType: ResourcesUtilityTests
+- uid: Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.ValidateUnityObjectType_AllowsUnityObjectType
+  name: ValidateUnityObjectType_AllowsUnityObjectType()
+  href: api/Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.html#Lunar_Adapters_Unity_Tests_ResourcesUtilityTests_ValidateUnityObjectType_AllowsUnityObjectType
+  commentId: M:Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.ValidateUnityObjectType_AllowsUnityObjectType
+  fullName: Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.ValidateUnityObjectType_AllowsUnityObjectType()
+  nameWithType: ResourcesUtilityTests.ValidateUnityObjectType_AllowsUnityObjectType()
+- uid: Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.ValidateUnityObjectType_AllowsUnityObjectType*
+  name: ValidateUnityObjectType_AllowsUnityObjectType
+  href: api/Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.html#Lunar_Adapters_Unity_Tests_ResourcesUtilityTests_ValidateUnityObjectType_AllowsUnityObjectType_
+  commentId: Overload:Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.ValidateUnityObjectType_AllowsUnityObjectType
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.ValidateUnityObjectType_AllowsUnityObjectType
+  nameWithType: ResourcesUtilityTests.ValidateUnityObjectType_AllowsUnityObjectType
+- uid: Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.ValidateUnityObjectType_ThrowsForNonUnityType_NoMethodName
+  name: ValidateUnityObjectType_ThrowsForNonUnityType_NoMethodName()
+  href: api/Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.html#Lunar_Adapters_Unity_Tests_ResourcesUtilityTests_ValidateUnityObjectType_ThrowsForNonUnityType_NoMethodName
+  commentId: M:Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.ValidateUnityObjectType_ThrowsForNonUnityType_NoMethodName
+  fullName: Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.ValidateUnityObjectType_ThrowsForNonUnityType_NoMethodName()
+  nameWithType: ResourcesUtilityTests.ValidateUnityObjectType_ThrowsForNonUnityType_NoMethodName()
+- uid: Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.ValidateUnityObjectType_ThrowsForNonUnityType_NoMethodName*
+  name: ValidateUnityObjectType_ThrowsForNonUnityType_NoMethodName
+  href: api/Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.html#Lunar_Adapters_Unity_Tests_ResourcesUtilityTests_ValidateUnityObjectType_ThrowsForNonUnityType_NoMethodName_
+  commentId: Overload:Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.ValidateUnityObjectType_ThrowsForNonUnityType_NoMethodName
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.ValidateUnityObjectType_ThrowsForNonUnityType_NoMethodName
+  nameWithType: ResourcesUtilityTests.ValidateUnityObjectType_ThrowsForNonUnityType_NoMethodName
+- uid: Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.ValidateUnityObjectType_ThrowsForNonUnityType_WithMethodName
+  name: ValidateUnityObjectType_ThrowsForNonUnityType_WithMethodName()
+  href: api/Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.html#Lunar_Adapters_Unity_Tests_ResourcesUtilityTests_ValidateUnityObjectType_ThrowsForNonUnityType_WithMethodName
+  commentId: M:Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.ValidateUnityObjectType_ThrowsForNonUnityType_WithMethodName
+  fullName: Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.ValidateUnityObjectType_ThrowsForNonUnityType_WithMethodName()
+  nameWithType: ResourcesUtilityTests.ValidateUnityObjectType_ThrowsForNonUnityType_WithMethodName()
+- uid: Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.ValidateUnityObjectType_ThrowsForNonUnityType_WithMethodName*
+  name: ValidateUnityObjectType_ThrowsForNonUnityType_WithMethodName
+  href: api/Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.html#Lunar_Adapters_Unity_Tests_ResourcesUtilityTests_ValidateUnityObjectType_ThrowsForNonUnityType_WithMethodName_
+  commentId: Overload:Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.ValidateUnityObjectType_ThrowsForNonUnityType_WithMethodName
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.ValidateUnityObjectType_ThrowsForNonUnityType_WithMethodName
+  nameWithType: ResourcesUtilityTests.ValidateUnityObjectType_ThrowsForNonUnityType_WithMethodName
+- uid: Lunar.Adapters.Unity.Utils
+  name: Lunar.Adapters.Unity.Utils
+  href: api/Lunar.Adapters.Unity.Utils.html
+  commentId: N:Lunar.Adapters.Unity.Utils
+  fullName: Lunar.Adapters.Unity.Utils
+  nameWithType: Lunar.Adapters.Unity.Utils
+- uid: Lunar.Adapters.Unity.Utils.UnityConversionUtils
+  name: UnityConversionUtils
+  href: api/Lunar.Adapters.Unity.Utils.UnityConversionUtils.html
+  commentId: T:Lunar.Adapters.Unity.Utils.UnityConversionUtils
+  fullName: Lunar.Adapters.Unity.Utils.UnityConversionUtils
+  nameWithType: UnityConversionUtils
+- uid: Lunar.Adapters.Unity.Utils.UnityConversionUtils.TryParseToUnity(GameObjectComponent,UnityEngine.GameObject@)
+  name: TryParseToUnity(GameObjectComponent, out GameObject)
+  href: api/Lunar.Adapters.Unity.Utils.UnityConversionUtils.html#Lunar_Adapters_Unity_Utils_UnityConversionUtils_TryParseToUnity_GameObjectComponent_UnityEngine_GameObject__
+  commentId: M:Lunar.Adapters.Unity.Utils.UnityConversionUtils.TryParseToUnity(GameObjectComponent,UnityEngine.GameObject@)
+  name.vb: TryParseToUnity(GameObjectComponent, GameObject)
+  fullName: Lunar.Adapters.Unity.Utils.UnityConversionUtils.TryParseToUnity(GameObjectComponent, out UnityEngine.GameObject)
+  fullName.vb: Lunar.Adapters.Unity.Utils.UnityConversionUtils.TryParseToUnity(GameObjectComponent, UnityEngine.GameObject)
+  nameWithType: UnityConversionUtils.TryParseToUnity(GameObjectComponent, out UnityEngine.GameObject)
+  nameWithType.vb: UnityConversionUtils.TryParseToUnity(GameObjectComponent, UnityEngine.GameObject)
+- uid: Lunar.Adapters.Unity.Utils.UnityConversionUtils.TryParseToUnity(SpriteComponent,UnityEngine.SpriteRenderer@)
+  name: TryParseToUnity(SpriteComponent, out SpriteRenderer)
+  href: api/Lunar.Adapters.Unity.Utils.UnityConversionUtils.html#Lunar_Adapters_Unity_Utils_UnityConversionUtils_TryParseToUnity_SpriteComponent_UnityEngine_SpriteRenderer__
+  commentId: M:Lunar.Adapters.Unity.Utils.UnityConversionUtils.TryParseToUnity(SpriteComponent,UnityEngine.SpriteRenderer@)
+  name.vb: TryParseToUnity(SpriteComponent, SpriteRenderer)
+  fullName: Lunar.Adapters.Unity.Utils.UnityConversionUtils.TryParseToUnity(SpriteComponent, out UnityEngine.SpriteRenderer)
+  fullName.vb: Lunar.Adapters.Unity.Utils.UnityConversionUtils.TryParseToUnity(SpriteComponent, UnityEngine.SpriteRenderer)
+  nameWithType: UnityConversionUtils.TryParseToUnity(SpriteComponent, out UnityEngine.SpriteRenderer)
+  nameWithType.vb: UnityConversionUtils.TryParseToUnity(SpriteComponent, UnityEngine.SpriteRenderer)
+- uid: Lunar.Adapters.Unity.Utils.UnityConversionUtils.TryParseToUnity*
+  name: TryParseToUnity
+  href: api/Lunar.Adapters.Unity.Utils.UnityConversionUtils.html#Lunar_Adapters_Unity_Utils_UnityConversionUtils_TryParseToUnity_
+  commentId: Overload:Lunar.Adapters.Unity.Utils.UnityConversionUtils.TryParseToUnity
+  isSpec: "True"
+  fullName: Lunar.Adapters.Unity.Utils.UnityConversionUtils.TryParseToUnity
+  nameWithType: UnityConversionUtils.TryParseToUnity

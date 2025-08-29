@@ -1,0 +1,385 @@
+{
+  "sitemap": {
+    "baseUrl": "https://bli-aik.github.io/Lunar.Adapters.Unity/"
+  },
+  "source_base_path": "/home/runner/work/Lunar.Adapters.Unity/Lunar.Adapters.Unity/Documentation~",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Adapters.Unity.DebugLogAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Adapters.Unity.DebugLogAdapter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunar.Adapters.Unity.DebugLogAdapter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Adapters.Unity.GameBootstrap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Adapters.Unity.GameBootstrap.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunar.Adapters.Unity.GameBootstrap",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Adapters.Unity.GameController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Adapters.Unity.GameController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunar.Adapters.Unity.GameController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Adapters.Unity.InputActionsAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Adapters.Unity.InputActionsAdapter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunar.Adapters.Unity.InputActionsAdapter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Adapters.Unity.InputAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Adapters.Unity.InputAdapter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunar.Adapters.Unity.InputAdapter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Adapters.Unity.KeyCodeConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Adapters.Unity.KeyCodeConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunar.Adapters.Unity.KeyCodeConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Adapters.Unity.ResourcesAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Adapters.Unity.ResourcesAdapter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunar.Adapters.Unity.ResourcesAdapter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Adapters.Unity.ResourcesUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Adapters.Unity.ResourcesUtility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunar.Adapters.Unity.ResourcesUtility",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Adapters.Unity.ServiceRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Adapters.Unity.ServiceRegistry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunar.Adapters.Unity.ServiceRegistry",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunar.Adapters.Unity.Systems.GameObjectSyncSystem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Adapters.Unity.Systems.SpriteCleanSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Adapters.Unity.Systems.SpriteCleanSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunar.Adapters.Unity.Systems.SpriteCleanSystem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Adapters.Unity.Systems.SpriteSyncSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Adapters.Unity.Systems.SpriteSyncSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunar.Adapters.Unity.Systems.SpriteSyncSystem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Adapters.Unity.Systems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Adapters.Unity.Systems.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunar.Adapters.Unity.Systems",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Adapters.Unity.Tests.KeyCodeConverterTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Adapters.Unity.Tests.KeyCodeConverterTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunar.Adapters.Unity.Tests.KeyCodeConverterTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunar.Adapters.Unity.Tests.ResourcesAdapterTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunar.Adapters.Unity.Tests.ResourcesUtilityTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Adapters.Unity.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Adapters.Unity.Tests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunar.Adapters.Unity.Tests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Adapters.Unity.Utils.UnityConversionUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Adapters.Unity.Utils.UnityConversionUtils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunar.Adapters.Unity.Utils.UnityConversionUtils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Adapters.Unity.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Adapters.Unity.Utils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunar.Adapters.Unity.Utils",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lunar.Adapters.Unity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lunar.Adapters.Unity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lunar.Adapters.Unity",
+      "Summary": null
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "license/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "license/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "license/toc.md",
+      "output": {
+        ".json": {
+          "relative_path": "license/toc.json"
+        },
+        ".html": {
+          "relative_path": "license/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

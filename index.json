@@ -1,0 +1,122 @@
+{
+  "api/Lunar.Adapters.Unity.DebugLogAdapter.html": {
+    "href": "api/Lunar.Adapters.Unity.DebugLogAdapter.html",
+    "title": "Class DebugLogAdapter | LunarForUnity | 0.1.0",
+    "summary": "Class DebugLogAdapter Namespace Lunar.Adapters.Unity public class DebugLogAdapter : Interfaces.ILogger Inheritance object DebugLogAdapter Methods Log(object, object) public void Log(object message, object context = null) Parameters message object context object LogError(object, object) public void LogError(object message, object context = null) Parameters message object context object LogWarning(object, object) public void LogWarning(object message, object context = null) Parameters message object context object"
+  },
+  "api/Lunar.Adapters.Unity.GameBootstrap.html": {
+    "href": "api/Lunar.Adapters.Unity.GameBootstrap.html",
+    "title": "Class GameBootstrap | LunarForUnity | 0.1.0",
+    "summary": "Class GameBootstrap Namespace Lunar.Adapters.Unity public abstract class GameBootstrap : MonoBehaviour Inheritance object GameBootstrap Methods Awake() public void Awake() ServiceRegistry() public abstract ServiceRegistry ServiceRegistry() Returns ServiceRegistry"
+  },
+  "api/Lunar.Adapters.Unity.GameController.html": {
+    "href": "api/Lunar.Adapters.Unity.GameController.html",
+    "title": "Class GameController | LunarForUnity | 0.1.0",
+    "summary": "Class GameController Namespace Lunar.Adapters.Unity public class GameController : MonoBehaviour Inheritance object GameController Properties Services public static ServiceRegistry Services { get; } Property Value ServiceRegistry ServicesFactory External replacement service factory public static Func<ServiceRegistry> ServicesFactory { get; set; } Property Value Func<ServiceRegistry> Methods DefaultServicesFactory() Default service configuration public static ServiceRegistry DefaultServicesFactory() Returns ServiceRegistry"
+  },
+  "api/Lunar.Adapters.Unity.InputActionsAdapter.html": {
+    "href": "api/Lunar.Adapters.Unity.InputActionsAdapter.html",
+    "title": "Class InputActionsAdapter | LunarForUnity | 0.1.0",
+    "summary": "Class InputActionsAdapter Namespace Lunar.Adapters.Unity public class InputActionsAdapter : IInputActions Inheritance object InputActionsAdapter Constructors InputActionsAdapter(IInput, Dictionary<string, KeyCode[]>) public InputActionsAdapter(IInput input, Dictionary<string, KeyCode[]> bindings) Parameters input IInput bindings Dictionary<string, KeyCode[]> Properties Bindings public Dictionary<string, KeyCode[]> Bindings { get; } Property Value Dictionary<string, KeyCode[]> Input public IInput Input { get; } Property Value IInput Methods ClearBindings() public void ClearBindings() GetAction(string) public bool GetAction(string action) Parameters action string Returns bool GetActionDown(string) public bool GetActionDown(string action) Parameters action string Returns bool GetActionUp(string) public bool GetActionUp(string action) Parameters action string Returns bool RemoveBinding(string) public bool RemoveBinding(string action) Parameters action string Returns bool SetBinding(string, params KeyCode[]) public bool SetBinding(string action, params KeyCode[] keys) Parameters action string keys KeyCode[] Returns bool"
+  },
+  "api/Lunar.Adapters.Unity.InputAdapter.html": {
+    "href": "api/Lunar.Adapters.Unity.InputAdapter.html",
+    "title": "Class InputAdapter | LunarForUnity | 0.1.0",
+    "summary": "Class InputAdapter Namespace Lunar.Adapters.Unity public class InputAdapter : IInput Inheritance object InputAdapter Methods GetKey(KeyCode) public bool GetKey(KeyCode keycode) Parameters keycode KeyCode Returns bool GetKeyDown(KeyCode) public bool GetKeyDown(KeyCode keycode) Parameters keycode KeyCode Returns bool GetKeyUp(KeyCode) public bool GetKeyUp(KeyCode keycode) Parameters keycode KeyCode Returns bool"
+  },
+  "api/Lunar.Adapters.Unity.KeyCodeConverter.html": {
+    "href": "api/Lunar.Adapters.Unity.KeyCodeConverter.html",
+    "title": "Class KeyCodeConverter | LunarForUnity | 0.1.0",
+    "summary": "Class KeyCodeConverter Namespace Lunar.Adapters.Unity public static class KeyCodeConverter Inheritance object KeyCodeConverter Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods ToUnity(KeyCode) public static UnityEngine.KeyCode ToUnity(this KeyCode key) Parameters key KeyCode Returns KeyCode"
+  },
+  "api/Lunar.Adapters.Unity.ResourcesAdapter.html": {
+    "href": "api/Lunar.Adapters.Unity.ResourcesAdapter.html",
+    "title": "Class ResourcesAdapter | LunarForUnity | 0.1.0",
+    "summary": "Class ResourcesAdapter Namespace Lunar.Adapters.Unity public class ResourcesAdapter : IResources, IResourcesAsync Inheritance object ResourcesAdapter Implements IResourcesAsync Methods LoadAllAsync<T>(IEnumerable<string>, CancellationToken) public Task<IEnumerable<T>> LoadAllAsync<T>(IEnumerable<string> paths, CancellationToken ct = default) Parameters paths IEnumerable<string> ct CancellationToken Returns Task<IEnumerable<T>> Type Parameters T LoadAllAsync<T>(string, CancellationToken) public Task<IEnumerable<T>> LoadAllAsync<T>(string path, CancellationToken ct = default) Parameters path string ct CancellationToken Returns Task<IEnumerable<T>> Type Parameters T LoadAll<T>(IEnumerable<string>) public IEnumerable<T> LoadAll<T>(IEnumerable<string> paths) Parameters paths IEnumerable<string> Returns IEnumerable<T> Type Parameters T LoadAll<T>(string) public IEnumerable<T> LoadAll<T>(string path) Parameters path string Returns IEnumerable<T> Type Parameters T LoadAsync<T>(string, CancellationToken) public Task<T> LoadAsync<T>(string path, CancellationToken ct = default) Parameters path string ct CancellationToken Returns Task<T> Type Parameters T Load<T>(string) public T Load<T>(string path) Parameters path string Returns T Type Parameters T Release<T>(T) public void Release<T>(T resource) Parameters resource T Type Parameters T"
+  },
+  "api/Lunar.Adapters.Unity.ResourcesUtility.html": {
+    "href": "api/Lunar.Adapters.Unity.ResourcesUtility.html",
+    "title": "Class ResourcesUtility | LunarForUnity | 0.1.0",
+    "summary": "Class ResourcesUtility Namespace Lunar.Adapters.Unity public static class ResourcesUtility Inheritance object ResourcesUtility Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods ValidateUnityObjectType<T>() public static void ValidateUnityObjectType<T>() Type Parameters T ValidateUnityObjectType<T>(string) public static void ValidateUnityObjectType<T>(string methodName) Parameters methodName string Type Parameters T"
+  },
+  "api/Lunar.Adapters.Unity.ServiceRegistry.html": {
+    "href": "api/Lunar.Adapters.Unity.ServiceRegistry.html",
+    "title": "Class ServiceRegistry | LunarForUnity | 0.1.0",
+    "summary": "Class ServiceRegistry Namespace Lunar.Adapters.Unity public class ServiceRegistry Inheritance object ServiceRegistry Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties InputActions public IInputActions InputActions { get; set; } Property Value IInputActions Logger public ILogger Logger { get; set; } Property Value ILogger Resources public IResources Resources { get; set; } Property Value IResources ResourcesAsync public IResourcesAsync ResourcesAsync { get; set; } Property Value IResourcesAsync"
+  },
+  "api/Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.html": {
+    "href": "api/Lunar.Adapters.Unity.Systems.DebugCreateObjectSystem.html",
+    "title": "Class DebugCreateObjectSystem | LunarForUnity | 0.1.0",
+    "summary": "Class DebugCreateObjectSystem Namespace Lunar.Adapters.Unity.Systems public class DebugCreateObjectSystem : BaseSystem<World, float> Inheritance object DebugCreateObjectSystem Constructors DebugCreateObjectSystem(World) public DebugCreateObjectSystem(World world) Parameters world World Methods Initialize() public override void Initialize() Update(in float) public override void Update(in float deltaTime) Parameters deltaTime float"
+  },
+  "api/Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.html": {
+    "href": "api/Lunar.Adapters.Unity.Systems.GameObjectSyncSystem.html",
+    "title": "Class GameObjectSyncSystem | LunarForUnity | 0.1.0",
+    "summary": "Class GameObjectSyncSystem Namespace Lunar.Adapters.Unity.Systems public class GameObjectSyncSystem : GameObjectSyncSystemBase Inheritance object GameObjectSyncSystem Constructors GameObjectSyncSystem(World) public GameObjectSyncSystem(World world) Parameters world World Methods SyncName(GameObjectComponent, NameComponent) protected override void SyncName(GameObjectComponent gameObject, NameComponent name) Parameters gameObject GameObjectComponent name NameComponent SyncTransform(GameObjectComponent, TransformComponent) protected override void SyncTransform(GameObjectComponent gameObject, TransformComponent transform) Parameters gameObject GameObjectComponent transform TransformComponent"
+  },
+  "api/Lunar.Adapters.Unity.Systems.SpriteCleanSystem.html": {
+    "href": "api/Lunar.Adapters.Unity.Systems.SpriteCleanSystem.html",
+    "title": "Class SpriteCleanSystem | LunarForUnity | 0.1.0",
+    "summary": "Class SpriteCleanSystem Namespace Lunar.Adapters.Unity.Systems public class SpriteCleanSystem : SpriteCleanSystemBase Inheritance object SpriteCleanSystem Constructors SpriteCleanSystem(World) public SpriteCleanSystem(World world) Parameters world World Methods CleanSprite(SpriteComponent) protected override void CleanSprite(SpriteComponent sprite) Parameters sprite SpriteComponent"
+  },
+  "api/Lunar.Adapters.Unity.Systems.SpriteSyncSystem.html": {
+    "href": "api/Lunar.Adapters.Unity.Systems.SpriteSyncSystem.html",
+    "title": "Class SpriteSyncSystem | LunarForUnity | 0.1.0",
+    "summary": "Class SpriteSyncSystem Namespace Lunar.Adapters.Unity.Systems public class SpriteSyncSystem : SpriteSyncSystemBase Inheritance object SpriteSyncSystem Constructors SpriteSyncSystem(World, IResources, ILogger?) public SpriteSyncSystem(World world, IResources resources, ILogger? logger = null) Parameters world World resources IResources logger ILogger? SpriteSyncSystem(World, IResourcesAsync, ILogger?) public SpriteSyncSystem(World world, IResourcesAsync resourcesAsync, ILogger? logger = null) Parameters world World resourcesAsync IResourcesAsync logger ILogger? Methods SyncSprite(SpriteComponent) protected override Task<SpriteComponent> SyncSprite(SpriteComponent sprite) Parameters sprite SpriteComponent Returns Task<SpriteComponent>"
+  },
+  "api/Lunar.Adapters.Unity.Systems.html": {
+    "href": "api/Lunar.Adapters.Unity.Systems.html",
+    "title": "Namespace Lunar.Adapters.Unity.Systems | LunarForUnity | 0.1.0",
+    "summary": "Namespace Lunar.Adapters.Unity.Systems Classes DebugCreateObjectSystem GameObjectSyncSystem SpriteCleanSystem SpriteSyncSystem"
+  },
+  "api/Lunar.Adapters.Unity.Tests.KeyCodeConverterTests.html": {
+    "href": "api/Lunar.Adapters.Unity.Tests.KeyCodeConverterTests.html",
+    "title": "Class KeyCodeConverterTests | LunarForUnity | 0.1.0",
+    "summary": "Class KeyCodeConverterTests Namespace Lunar.Adapters.Unity.Tests public class KeyCodeConverterTests Inheritance object KeyCodeConverterTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods All_LunarKeyCodes_MapTo_UnityEngineKeyCode() public void All_LunarKeyCodes_MapTo_UnityEngineKeyCode()"
+  },
+  "api/Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.html": {
+    "href": "api/Lunar.Adapters.Unity.Tests.ResourcesAdapterTests.html",
+    "title": "Class ResourcesAdapterTests | LunarForUnity | 0.1.0",
+    "summary": "Class ResourcesAdapterTests Namespace Lunar.Adapters.Unity.Tests public class ResourcesAdapterTests Inheritance object ResourcesAdapterTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods LoadAll_ByFolder_ReturnsAll() public void LoadAll_ByFolder_ReturnsAll() LoadAll_ByPathsEnumerable_ReturnsEach() public void LoadAll_ByPathsEnumerable_ReturnsEach() Load_TextAsset_ReturnsAsset() public void Load_TextAsset_ReturnsAsset() Release_TextAsset_DoesNotThrow() public void Release_TextAsset_DoesNotThrow() SetUp() public void SetUp()"
+  },
+  "api/Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.html": {
+    "href": "api/Lunar.Adapters.Unity.Tests.ResourcesUtilityTests.html",
+    "title": "Class ResourcesUtilityTests | LunarForUnity | 0.1.0",
+    "summary": "Class ResourcesUtilityTests Namespace Lunar.Adapters.Unity.Tests public class ResourcesUtilityTests Inheritance object ResourcesUtilityTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods ValidateUnityObjectType_AllowsUnityObjectType() public void ValidateUnityObjectType_AllowsUnityObjectType() ValidateUnityObjectType_ThrowsForNonUnityType_NoMethodName() public void ValidateUnityObjectType_ThrowsForNonUnityType_NoMethodName() ValidateUnityObjectType_ThrowsForNonUnityType_WithMethodName() public void ValidateUnityObjectType_ThrowsForNonUnityType_WithMethodName()"
+  },
+  "api/Lunar.Adapters.Unity.Tests.html": {
+    "href": "api/Lunar.Adapters.Unity.Tests.html",
+    "title": "Namespace Lunar.Adapters.Unity.Tests | LunarForUnity | 0.1.0",
+    "summary": "Namespace Lunar.Adapters.Unity.Tests Classes KeyCodeConverterTests ResourcesAdapterTests ResourcesUtilityTests"
+  },
+  "api/Lunar.Adapters.Unity.Utils.UnityConversionUtils.html": {
+    "href": "api/Lunar.Adapters.Unity.Utils.UnityConversionUtils.html",
+    "title": "Class UnityConversionUtils | LunarForUnity | 0.1.0",
+    "summary": "Class UnityConversionUtils Namespace Lunar.Adapters.Unity.Utils public static class UnityConversionUtils Inheritance object UnityConversionUtils Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods TryParseToUnity(GameObjectComponent, out GameObject) public static bool TryParseToUnity(this GameObjectComponent gameObject, out UnityEngine.GameObject unityGameObject) Parameters gameObject GameObjectComponent unityGameObject GameObject Returns bool TryParseToUnity(SpriteComponent, out SpriteRenderer) public static bool TryParseToUnity(this SpriteComponent sprite, out UnityEngine.SpriteRenderer unitySpriteRenderer) Parameters sprite SpriteComponent unitySpriteRenderer SpriteRenderer Returns bool"
+  },
+  "api/Lunar.Adapters.Unity.Utils.html": {
+    "href": "api/Lunar.Adapters.Unity.Utils.html",
+    "title": "Namespace Lunar.Adapters.Unity.Utils | LunarForUnity | 0.1.0",
+    "summary": "Namespace Lunar.Adapters.Unity.Utils Classes UnityConversionUtils"
+  },
+  "api/Lunar.Adapters.Unity.html": {
+    "href": "api/Lunar.Adapters.Unity.html",
+    "title": "Namespace Lunar.Adapters.Unity | LunarForUnity | 0.1.0",
+    "summary": "Namespace Lunar.Adapters.Unity Classes DebugLogAdapter GameBootstrap GameController InputActionsAdapter InputAdapter KeyCodeConverter ResourcesAdapter ResourcesUtility ServiceRegistry"
+  },
+  "api/index.html": {
+    "href": "api/index.html",
+    "title": "| LunarForUnity | 0.1.0",
+    "summary": "This is the documentation for the Scripting APIs of this package."
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "| LunarForUnity | 0.1.0",
+    "summary": "This page redirects to the manual."
+  },
+  "license/LICENSE.html": {
+    "href": "license/LICENSE.html",
+    "title": "| LunarForUnity | 0.1.0",
+    "summary": "GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright (C) 2007 Free Software Foundation, Inc. http://fsf.org/ Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed. This version of the GNU Lesser General Public License incorporates the terms and conditions of version 3 of the GNU General Public License, supplemented by the additional permissions listed below. Additional Definitions. As used herein, \"this License\" refers to version 3 of the GNU Lesser General Public License, and the \"GNU GPL\" refers to version 3 of the GNU General Public License. \"The Library\" refers to a covered work governed by this License, other than an Application or a Combined Work as defined below. An \"Application\" is any work that makes use of an interface provided by the Library, but which is not otherwise based on the Library. Defining a subclass of a class defined by the Library is deemed a mode of using an interface provided by the Library. A \"Combined Work\" is a work produced by combining or linking an Application with the Library. The particular version of the Library with which the Combined Work was made is also called the \"Linked Version\". The \"Minimal Corresponding Source\" for a Combined Work means the Corresponding Source for the Combined Work, excluding any source code for portions of the Combined Work that, considered in isolation, are based on the Application, and not on the Linked Version. The \"Corresponding Application Code\" for a Combined Work means the object code and/or source code for the Application, including any data and utility programs needed for reproducing the Combined Work from the Application, but excluding the System Libraries of the Combined Work. Exception to Section 3 of the GNU GPL. You may convey a covered work under sections 3 and 4 of this License without being bound by section 3 of the GNU GPL. Conveying Modified Versions. If you modify a copy of the Library, and, in your modifications, a facility refers to a function or data to be supplied by an Application that uses the facility (other than as an argument passed when the facility is invoked), then you may convey a copy of the modified version: a) under this License, provided that you make a good faith effort to ensure that, in the event an Application does not supply the function or data, the facility still operates, and performs whatever part of its purpose remains meaningful, or b) under the GNU GPL, with none of the additional permissions of this License applicable to that copy. Object Code Incorporating Material from Library Header Files. The object code form of an Application may incorporate material from a header file that is part of the Library. You may convey such object code under terms of your choice, provided that, if the incorporated material is not limited to numerical parameters, data structure layouts and accessors, or small macros, inline functions and templates (ten or fewer lines in length), you do both of the following: a) Give prominent notice with each copy of the object code that the Library is used in it and that the Library and its use are covered by this License. b) Accompany the object code with a copy of the GNU GPL and this license document. Combined Works. You may convey a Combined Work under terms of your choice that, taken together, effectively do not restrict modification of the portions of the Library contained in the Combined Work and reverse engineering for debugging such modifications, if you also do each of the following: a) Give prominent notice with each copy of the Combined Work that the Library is used in it and that the Library and its use are covered by this License. b) Accompany the Combined Work with a copy of the GNU GPL and this license document. c) For a Combined Work that displays copyright notices during execution, include the copyright notice for the Library among these notices, as well as a reference directing the user to the copies of the GNU GPL and this license document. d) Do one of the following: 0) Convey the Minimal Corresponding Source under the terms of this License, and the Corresponding Application Code in a form suitable for, and under terms that permit, the user to recombine or relink the Application with a modified version of the Linked Version to produce a modified Combined Work, in the manner specified by section 6 of the GNU GPL for conveying Corresponding Source. 1) Use a suitable shared library mechanism for linking with the Library. A suitable mechanism is one that (a) uses at run time a copy of the Library already present on the user's computer system, and (b) will operate properly with a modified version of the Library that is interface-compatible with the Linked Version. e) Provide Installation Information, but only if you would otherwise be required to provide such information under section 6 of the GNU GPL, and only to the extent that such information is necessary to install and execute a modified version of the Combined Work produced by recombining or relinking the Application with a modified version of the Linked Version. (If you use option 4d0, the Installation Information must accompany the Minimal Corresponding Source and Corresponding Application Code. If you use option 4d1, you must provide the Installation Information in the manner specified by section 6 of the GNU GPL for conveying Corresponding Source.) Combined Libraries. You may place library facilities that are a work based on the Library side by side in a single library together with other library facilities that are not Applications and are not covered by this License, and convey such a combined library under terms of your choice, if you do both of the following: a) Accompany the combined library with a copy of the same work based on the Library, uncombined with any other library facilities, conveyed under the terms of this License. b) Give prominent notice with the combined library that part of it is a work based on the Library, and explaining where to find the accompanying uncombined form of the same work. Revised Versions of the GNU Lesser General Public License. The Free Software Foundation may publish revised and/or new versions of the GNU Lesser General Public License from time to time. Such new versions will be similar in spirit to the present version, but may differ in detail to address new problems or concerns. Each version is given a distinguishing version number. If the Library as you received it specifies that a certain numbered version of the GNU Lesser General Public License \"or any later version\" applies to it, you have the option of following the terms and conditions either of that published version or of any later version published by the Free Software Foundation. If the Library as you received it does not specify a version number of the GNU Lesser General Public License, you may choose any version of the GNU Lesser General Public License ever published by the Free Software Foundation. If the Library as you received it specifies that a proxy can decide whether future versions of the GNU Lesser General Public License shall apply, that proxy's public statement of acceptance of any version is permanent authorization for you to choose that version for the Library."
+  }
+}
