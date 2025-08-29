@@ -17,7 +17,9 @@ namespace Lunar.Adapters.Unity
         private readonly ObjectPool<UnityEngine.GameObject> _gameObjectPool;
         private readonly Transform _parent;
 
-        public GameControllerImplementation(ObjectPool<UnityEngine.GameObject> pool, Transform parent)
+        public GameControllerImplementation(
+            ObjectPool<UnityEngine.GameObject> pool,
+            Transform parent)
         {
             _gameObjectPool = pool;
             _parent = parent;
@@ -25,9 +27,11 @@ namespace Lunar.Adapters.Unity
 
         protected override Group<float> CreateSystems(World world)
         {
+            var serviceRegistry = GameController.Services;
             return new Group<float>("MainGroup",
                 new DebugCreateObjectSystem(world),
-                new GameObjectSyncSystem(world)
+                new GameObjectSyncSystem(world),
+                new SpriteSyncSystem(world, serviceRegistry.Resources, serviceRegistry.Logger)
             );
         }
 
@@ -49,8 +53,8 @@ namespace Lunar.Adapters.Unity
                 unityGameObject.transform.SetParent(_parent);
                 entity.Set(new GameObjectComponent(new GameObject(unityGameObject)));
             });
-            
-            
+
+
             world.SubscribeComponentAdded((in Entity entity, ref SpriteComponent spriteComponent) =>
             {
                 if (!entity.TryGet<GameObjectComponent>(out var gameObject))
@@ -58,24 +62,17 @@ namespace Lunar.Adapters.Unity
                     gameObject = new GameObjectComponent();
                     entity.Add(gameObject);
                 }
-                
+
                 if (!gameObject.TryParseToUnity(out var unityGameObject))
                 {
                     return;
                 }
 
-
-                if (unityGameObject.TryGetComponent<SpriteRenderer>(out var spriteRenderer))
-                {
-                    //spriteRenderer.sprite = ;
-                    spriteComponent.Sprite = new Sprite(spriteRenderer);
-                }
-                else
-                {
-                    spriteComponent.Sprite = new Sprite(unityGameObject.AddComponent<SpriteRenderer>());
-                }
+                spriteComponent.Sprite = unityGameObject.TryGetComponent<SpriteRenderer>(out var spriteRenderer)
+                    ? new Sprite(spriteRenderer)
+                    : new Sprite(unityGameObject.AddComponent<SpriteRenderer>());
             });
-            
+
             world.SubscribeComponentRemoved((in Entity entity, ref GameObjectComponent gameObjectComponent) =>
             {
                 if (gameObjectComponent.GameObject != null)

@@ -10,15 +10,22 @@ namespace Lunar.Adapters.Unity.Utils
             unityGameObject = gameObject.GameObject.BaseGameObject as UnityEngine.GameObject;
 
             return unityGameObject;
+
         }
 
 
         public static bool TryParseToUnity(this SpriteComponent sprite,
             out UnityEngine.SpriteRenderer unitySpriteRenderer)
         {
-            unitySpriteRenderer = sprite.Sprite.BaseSprite as UnityEngine.SpriteRenderer;
+            if (sprite.Sprite != null)
+            {
+                unitySpriteRenderer = sprite.Sprite.BaseSprite as UnityEngine.SpriteRenderer;
 
-            return unitySpriteRenderer;
+                return unitySpriteRenderer;
+            }
+
+            unitySpriteRenderer = null;
+            return false;
         }
         
         
