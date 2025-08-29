@@ -13,7 +13,6 @@ namespace Lunar.Adapters.Unity.Systems
         public override void Initialize()
         {
             Debug.Log("DebugCreateObjectSystem Initialized!");
-            
         }
 
         public override void Update(in float deltaTime)
@@ -23,6 +22,11 @@ namespace Lunar.Adapters.Unity.Systems
                 var entity = World.Create(new GameObjectComponent());
                 Debug.Log($"Created {entity}");
                 entity.Add(new NameComponent($"Lunar Entity: {entity.Id}"));
+                if (Input.GetKey(UnityEngine.KeyCode.LeftControl))
+                {
+                    Debug.Log($"Add SpriteComponent: {entity.Id}");
+                    entity.Add(new SpriteComponent("A"));
+                }
             }
 
 
@@ -34,6 +38,22 @@ namespace Lunar.Adapters.Unity.Systems
                 {
                     World.Remove<GameObjectComponent>(entity);
                     Debug.Log($"Remove {entity}");
+                });
+            }
+
+
+            if (Input.GetKeyDown(UnityEngine.KeyCode.C))
+            {
+                var query = new QueryDescription().WithAll<SpriteComponent>();
+                World.Query(in query, (Entity entity,
+                    ref SpriteComponent spriteComponent) =>
+                {
+                    spriteComponent.Path = spriteComponent.Path switch
+                    {
+                        "A" => "B",
+                        "B" => "A",
+                        _ => spriteComponent.Path
+                    };
                 });
             }
         }
