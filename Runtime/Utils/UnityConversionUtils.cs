@@ -1,7 +1,6 @@
-using System;
 using Lunar.Components;
 
-namespace Lunar.Adapters.Unity
+namespace Lunar.Adapters.Unity.Utils
 {
     public static class UnityConversionUtils
     {

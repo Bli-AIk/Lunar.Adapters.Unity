@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Lunar.Interfaces;
 
-namespace Lunar.Adapters.Unity
+namespace Lunar.Adapters.Unity.Services
 {
     public class ServiceLocator : IServiceLocator
     {
@@ -10,7 +10,7 @@ namespace Lunar.Adapters.Unity
         public static IServiceLocator Instance { get; } = new ServiceLocator();
 
         public IResources Resources { get; } = new ResourcesAdapter();
-        //public IResourcesAsync ResourcesAsync { get; } = new AddressablesAdapter();
+        public IResourcesAsync ResourcesAsync { get; } = new ResourcesAdapter();
 
         public IInputActions InputActions { get; } = new InputActionsAdapter(new InputAdapter(),
             new Dictionary<string, KeyCode[]>
