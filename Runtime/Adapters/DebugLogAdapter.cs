@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-using ILogger = Lunar.Interfaces.ILogger;
+using ILogger = Lunar.Core.Base.Interfaces.ILogger;
 using Object = UnityEngine.Object;
 
 namespace Lunar.Adapters.Unity

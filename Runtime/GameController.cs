@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Lunar.Core.Base;
 using UnityEngine;
 using UnityEngine.Pool;
 
@@ -66,12 +67,12 @@ namespace Lunar.Adapters.Unity
                 ResourcesAsync = new ResourcesAdapter(),
                 InputActions = new InputActionsAdapter(
                     new InputAdapter(),
-                    new Dictionary<string, KeyCode[]>
+                    new Dictionary<string, KeyCodeBase[]>
                     {
-                        ["Play"] = new[] { KeyCode.Space },
-                        ["Pause"] = new[] { KeyCode.P },
-                        ["Resume"] = new[] { KeyCode.R },
-                        ["Cancel"] = new[] { KeyCode.C }
+                        ["Play"] = new[] { KeyCodeBase.Space },
+                        ["Pause"] = new[] { KeyCodeBase.P },
+                        ["Resume"] = new[] { KeyCodeBase.R },
+                        ["Cancel"] = new[] { KeyCodeBase.C }
                     }),
                 Logger = new DebugLogAdapter()
             };

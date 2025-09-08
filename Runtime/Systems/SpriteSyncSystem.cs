@@ -3,9 +3,11 @@ using System;
 using System.Threading.Tasks;
 using Arch.Core;
 using Lunar.Adapters.Unity.Utils;
-using Lunar.Components;
-using Lunar.Interfaces;
-using Lunar.Systems;
+
+using Lunar.Core.Base.Interfaces;
+using Lunar.Core.ECS.Components;
+using Lunar.Core.ECS.Systems;
+
 
 namespace Lunar.Adapters.Unity.Systems
 {

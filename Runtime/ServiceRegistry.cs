@@ -1,4 +1,4 @@
-using Lunar.Interfaces;
+using Lunar.Core.Base.Interfaces;
 
 namespace Lunar.Adapters.Unity
 {

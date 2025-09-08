@@ -7,7 +7,9 @@
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [
-        "Lunar.dll",
+        
+        "Lunar.Core.Base.dll",
+        "Lunar.Core.ECS.dll",
         "Arch.dll",
         "Arch.System.dll"
     ],
