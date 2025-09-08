@@ -10,17 +10,17 @@ namespace Lunar.Adapters.Unity
 {
     public class InputAdapter : IInput
     {
-        public bool GetKeyDown(KeyCodeBase keycode)
+        public bool GetKeyDown(KeyCodeHandle keycode)
         {
             return Input.GetKeyDown(keycode.ToUnity());
         }
 
-        public bool GetKey(KeyCodeBase keycode)
+        public bool GetKey(KeyCodeHandle keycode)
         {
             return Input.GetKey(keycode.ToUnity());
         }
 
-        public bool GetKeyUp(KeyCodeBase keycode)
+        public bool GetKeyUp(KeyCodeHandle keycode)
         {
             return Input.GetKeyUp(keycode.ToUnity());
         }
@@ -28,16 +28,16 @@ namespace Lunar.Adapters.Unity
 
     public static class KeyCodeConverter
     {
-        private static readonly ConcurrentDictionary<KeyCodeBase, UnityEngine.KeyCode> Cache = new();
+        private static readonly ConcurrentDictionary<KeyCodeHandle, UnityEngine.KeyCode> Cache = new();
 
         // If some key names are inconsistent on both sides, they can be overwritten here uniformly
-        private static readonly Dictionary<KeyCodeBase, UnityEngine.KeyCode> Overrides
+        private static readonly Dictionary<KeyCodeHandle, UnityEngine.KeyCode> Overrides
             = new()
             {
                 // [KeyCode.SomeLunarName] = UnityEngine.KeyCode.SomeDifferentUnityName,
             };
 
-        public static UnityEngine.KeyCode ToUnity(this KeyCodeBase key)
+        public static UnityEngine.KeyCode ToUnity(this KeyCodeHandle key)
         {
             if (Overrides.TryGetValue(key, out var overridden))
             {
@@ -61,16 +61,16 @@ namespace Lunar.Adapters.Unity
     }
     public class InputActionsAdapter : IInputActions
     {
-        public Dictionary<string, KeyCodeBase[]> Bindings { get; }
+        public Dictionary<string, KeyCodeHandle[]> Bindings { get; }
         public IInput Input { get; }
 
-        public InputActionsAdapter(IInput input, Dictionary<string, KeyCodeBase[]> bindings)
+        public InputActionsAdapter(IInput input, Dictionary<string, KeyCodeHandle[]> bindings)
         {
             Input = input;
             Bindings = bindings;
         }
 
-        public bool SetBinding(string action, params KeyCodeBase[] keys)
+        public bool SetBinding(string action, params KeyCodeHandle[] keys)
         {
             if (string.IsNullOrWhiteSpace(action))
             {
@@ -82,7 +82,7 @@ namespace Lunar.Adapters.Unity
                 return false;
             }
 
-            if (keys.Any(key => !Enum.IsDefined(typeof(KeyCodeBase), key)))
+            if (keys.Any(key => !Enum.IsDefined(typeof(KeyCodeHandle), key)))
             {
                 return false;
             }

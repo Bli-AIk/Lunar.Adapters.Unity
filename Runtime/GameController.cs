@@ -67,12 +67,12 @@ namespace Lunar.Adapters.Unity
                 ResourcesAsync = new ResourcesAdapter(),
                 InputActions = new InputActionsAdapter(
                     new InputAdapter(),
-                    new Dictionary<string, KeyCodeBase[]>
+                    new Dictionary<string, KeyCodeHandle[]>
                     {
-                        ["Play"] = new[] { KeyCodeBase.Space },
-                        ["Pause"] = new[] { KeyCodeBase.P },
-                        ["Resume"] = new[] { KeyCodeBase.R },
-                        ["Cancel"] = new[] { KeyCodeBase.C }
+                        ["Play"] = new[] { KeyCodeHandle.Space },
+                        ["Pause"] = new[] { KeyCodeHandle.P },
+                        ["Resume"] = new[] { KeyCodeHandle.R },
+                        ["Cancel"] = new[] { KeyCodeHandle.C }
                     }),
                 Logger = new DebugLogAdapter()
             };
