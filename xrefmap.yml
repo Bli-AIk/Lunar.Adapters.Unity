@@ -144,15 +144,15 @@ references:
   commentId: T:Lunar.Adapters.Unity.InputActionsAdapter
   fullName: Lunar.Adapters.Unity.InputActionsAdapter
   nameWithType: InputActionsAdapter
-- uid: Lunar.Adapters.Unity.InputActionsAdapter.#ctor(IInput,System.Collections.Generic.Dictionary{System.String,KeyCode[]})
-  name: InputActionsAdapter(IInput, Dictionary<string, KeyCode[]>)
-  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter__ctor_IInput_System_Collections_Generic_Dictionary_System_String_KeyCode____
-  commentId: M:Lunar.Adapters.Unity.InputActionsAdapter.#ctor(IInput,System.Collections.Generic.Dictionary{System.String,KeyCode[]})
-  name.vb: New(IInput, Dictionary(Of String, KeyCode()))
-  fullName: Lunar.Adapters.Unity.InputActionsAdapter.InputActionsAdapter(IInput, System.Collections.Generic.Dictionary<string, KeyCode[]>)
-  fullName.vb: Lunar.Adapters.Unity.InputActionsAdapter.New(IInput, System.Collections.Generic.Dictionary(Of String, KeyCode()))
-  nameWithType: InputActionsAdapter.InputActionsAdapter(IInput, Dictionary<string, KeyCode[]>)
-  nameWithType.vb: InputActionsAdapter.New(IInput, Dictionary(Of String, KeyCode()))
+- uid: Lunar.Adapters.Unity.InputActionsAdapter.#ctor(IInput,System.Collections.Generic.Dictionary{System.String,KeyCodeBase[]})
+  name: InputActionsAdapter(IInput, Dictionary<string, KeyCodeBase[]>)
+  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter__ctor_IInput_System_Collections_Generic_Dictionary_System_String_KeyCodeBase____
+  commentId: M:Lunar.Adapters.Unity.InputActionsAdapter.#ctor(IInput,System.Collections.Generic.Dictionary{System.String,KeyCodeBase[]})
+  name.vb: New(IInput, Dictionary(Of String, KeyCodeBase()))
+  fullName: Lunar.Adapters.Unity.InputActionsAdapter.InputActionsAdapter(IInput, System.Collections.Generic.Dictionary<string, KeyCodeBase[]>)
+  fullName.vb: Lunar.Adapters.Unity.InputActionsAdapter.New(IInput, System.Collections.Generic.Dictionary(Of String, KeyCodeBase()))
+  nameWithType: InputActionsAdapter.InputActionsAdapter(IInput, Dictionary<string, KeyCodeBase[]>)
+  nameWithType.vb: InputActionsAdapter.New(IInput, Dictionary(Of String, KeyCodeBase()))
 - uid: Lunar.Adapters.Unity.InputActionsAdapter.#ctor*
   name: InputActionsAdapter
   href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter__ctor_
@@ -266,15 +266,15 @@ references:
   isSpec: "True"
   fullName: Lunar.Adapters.Unity.InputActionsAdapter.RemoveBinding
   nameWithType: InputActionsAdapter.RemoveBinding
-- uid: Lunar.Adapters.Unity.InputActionsAdapter.SetBinding(System.String,KeyCode[])
-  name: SetBinding(string, params KeyCode[])
-  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter_SetBinding_System_String_KeyCode___
-  commentId: M:Lunar.Adapters.Unity.InputActionsAdapter.SetBinding(System.String,KeyCode[])
-  name.vb: SetBinding(String, ParamArray KeyCode())
-  fullName: Lunar.Adapters.Unity.InputActionsAdapter.SetBinding(string, params KeyCode[])
-  fullName.vb: Lunar.Adapters.Unity.InputActionsAdapter.SetBinding(String, ParamArray KeyCode())
-  nameWithType: InputActionsAdapter.SetBinding(string, params KeyCode[])
-  nameWithType.vb: InputActionsAdapter.SetBinding(String, ParamArray KeyCode())
+- uid: Lunar.Adapters.Unity.InputActionsAdapter.SetBinding(System.String,KeyCodeBase[])
+  name: SetBinding(string, params KeyCodeBase[])
+  href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter_SetBinding_System_String_KeyCodeBase___
+  commentId: M:Lunar.Adapters.Unity.InputActionsAdapter.SetBinding(System.String,KeyCodeBase[])
+  name.vb: SetBinding(String, ParamArray KeyCodeBase())
+  fullName: Lunar.Adapters.Unity.InputActionsAdapter.SetBinding(string, params KeyCodeBase[])
+  fullName.vb: Lunar.Adapters.Unity.InputActionsAdapter.SetBinding(String, ParamArray KeyCodeBase())
+  nameWithType: InputActionsAdapter.SetBinding(string, params KeyCodeBase[])
+  nameWithType.vb: InputActionsAdapter.SetBinding(String, ParamArray KeyCodeBase())
 - uid: Lunar.Adapters.Unity.InputActionsAdapter.SetBinding*
   name: SetBinding
   href: api/Lunar.Adapters.Unity.InputActionsAdapter.html#Lunar_Adapters_Unity_InputActionsAdapter_SetBinding_
@@ -288,12 +288,12 @@ references:
   commentId: T:Lunar.Adapters.Unity.InputAdapter
   fullName: Lunar.Adapters.Unity.InputAdapter
   nameWithType: InputAdapter
-- uid: Lunar.Adapters.Unity.InputAdapter.GetKey(KeyCode)
-  name: GetKey(KeyCode)
-  href: api/Lunar.Adapters.Unity.InputAdapter.html#Lunar_Adapters_Unity_InputAdapter_GetKey_KeyCode_
-  commentId: M:Lunar.Adapters.Unity.InputAdapter.GetKey(KeyCode)
-  fullName: Lunar.Adapters.Unity.InputAdapter.GetKey(KeyCode)
-  nameWithType: InputAdapter.GetKey(KeyCode)
+- uid: Lunar.Adapters.Unity.InputAdapter.GetKey(KeyCodeBase)
+  name: GetKey(KeyCodeBase)
+  href: api/Lunar.Adapters.Unity.InputAdapter.html#Lunar_Adapters_Unity_InputAdapter_GetKey_KeyCodeBase_
+  commentId: M:Lunar.Adapters.Unity.InputAdapter.GetKey(KeyCodeBase)
+  fullName: Lunar.Adapters.Unity.InputAdapter.GetKey(KeyCodeBase)
+  nameWithType: InputAdapter.GetKey(KeyCodeBase)
 - uid: Lunar.Adapters.Unity.InputAdapter.GetKey*
   name: GetKey
   href: api/Lunar.Adapters.Unity.InputAdapter.html#Lunar_Adapters_Unity_InputAdapter_GetKey_
@@ -301,12 +301,12 @@ references:
   isSpec: "True"
   fullName: Lunar.Adapters.Unity.InputAdapter.GetKey
   nameWithType: InputAdapter.GetKey
-- uid: Lunar.Adapters.Unity.InputAdapter.GetKeyDown(KeyCode)
-  name: GetKeyDown(KeyCode)
-  href: api/Lunar.Adapters.Unity.InputAdapter.html#Lunar_Adapters_Unity_InputAdapter_GetKeyDown_KeyCode_
-  commentId: M:Lunar.Adapters.Unity.InputAdapter.GetKeyDown(KeyCode)
-  fullName: Lunar.Adapters.Unity.InputAdapter.GetKeyDown(KeyCode)
-  nameWithType: InputAdapter.GetKeyDown(KeyCode)
+- uid: Lunar.Adapters.Unity.InputAdapter.GetKeyDown(KeyCodeBase)
+  name: GetKeyDown(KeyCodeBase)
+  href: api/Lunar.Adapters.Unity.InputAdapter.html#Lunar_Adapters_Unity_InputAdapter_GetKeyDown_KeyCodeBase_
+  commentId: M:Lunar.Adapters.Unity.InputAdapter.GetKeyDown(KeyCodeBase)
+  fullName: Lunar.Adapters.Unity.InputAdapter.GetKeyDown(KeyCodeBase)
+  nameWithType: InputAdapter.GetKeyDown(KeyCodeBase)
 - uid: Lunar.Adapters.Unity.InputAdapter.GetKeyDown*
   name: GetKeyDown
   href: api/Lunar.Adapters.Unity.InputAdapter.html#Lunar_Adapters_Unity_InputAdapter_GetKeyDown_
@@ -314,12 +314,12 @@ references:
   isSpec: "True"
   fullName: Lunar.Adapters.Unity.InputAdapter.GetKeyDown
   nameWithType: InputAdapter.GetKeyDown
-- uid: Lunar.Adapters.Unity.InputAdapter.GetKeyUp(KeyCode)
-  name: GetKeyUp(KeyCode)
-  href: api/Lunar.Adapters.Unity.InputAdapter.html#Lunar_Adapters_Unity_InputAdapter_GetKeyUp_KeyCode_
-  commentId: M:Lunar.Adapters.Unity.InputAdapter.GetKeyUp(KeyCode)
-  fullName: Lunar.Adapters.Unity.InputAdapter.GetKeyUp(KeyCode)
-  nameWithType: InputAdapter.GetKeyUp(KeyCode)
+- uid: Lunar.Adapters.Unity.InputAdapter.GetKeyUp(KeyCodeBase)
+  name: GetKeyUp(KeyCodeBase)
+  href: api/Lunar.Adapters.Unity.InputAdapter.html#Lunar_Adapters_Unity_InputAdapter_GetKeyUp_KeyCodeBase_
+  commentId: M:Lunar.Adapters.Unity.InputAdapter.GetKeyUp(KeyCodeBase)
+  fullName: Lunar.Adapters.Unity.InputAdapter.GetKeyUp(KeyCodeBase)
+  nameWithType: InputAdapter.GetKeyUp(KeyCodeBase)
 - uid: Lunar.Adapters.Unity.InputAdapter.GetKeyUp*
   name: GetKeyUp
   href: api/Lunar.Adapters.Unity.InputAdapter.html#Lunar_Adapters_Unity_InputAdapter_GetKeyUp_
@@ -333,12 +333,12 @@ references:
   commentId: T:Lunar.Adapters.Unity.KeyCodeConverter
   fullName: Lunar.Adapters.Unity.KeyCodeConverter
   nameWithType: KeyCodeConverter
-- uid: Lunar.Adapters.Unity.KeyCodeConverter.ToUnity(KeyCode)
-  name: ToUnity(KeyCode)
-  href: api/Lunar.Adapters.Unity.KeyCodeConverter.html#Lunar_Adapters_Unity_KeyCodeConverter_ToUnity_KeyCode_
-  commentId: M:Lunar.Adapters.Unity.KeyCodeConverter.ToUnity(KeyCode)
-  fullName: Lunar.Adapters.Unity.KeyCodeConverter.ToUnity(KeyCode)
-  nameWithType: KeyCodeConverter.ToUnity(KeyCode)
+- uid: Lunar.Adapters.Unity.KeyCodeConverter.ToUnity(KeyCodeBase)
+  name: ToUnity(KeyCodeBase)
+  href: api/Lunar.Adapters.Unity.KeyCodeConverter.html#Lunar_Adapters_Unity_KeyCodeConverter_ToUnity_KeyCodeBase_
+  commentId: M:Lunar.Adapters.Unity.KeyCodeConverter.ToUnity(KeyCodeBase)
+  fullName: Lunar.Adapters.Unity.KeyCodeConverter.ToUnity(KeyCodeBase)
+  nameWithType: KeyCodeConverter.ToUnity(KeyCodeBase)
 - uid: Lunar.Adapters.Unity.KeyCodeConverter.ToUnity*
   name: ToUnity
   href: api/Lunar.Adapters.Unity.KeyCodeConverter.html#Lunar_Adapters_Unity_KeyCodeConverter_ToUnity_
