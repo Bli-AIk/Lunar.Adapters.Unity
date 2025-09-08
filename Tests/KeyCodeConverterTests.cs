@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Lunar.Core.Base;
 using NUnit.Framework;
 
 namespace Lunar.Adapters.Unity.Tests
@@ -12,7 +13,7 @@ namespace Lunar.Adapters.Unity.Tests
         {
             var failed = new List<string>();
 
-            foreach (KeyCode lunarKey in Enum.GetValues(typeof(KeyCode)))
+            foreach (KeyCodeBase lunarKey in Enum.GetValues(typeof(KeyCodeBase)))
             {
                 try
                 {

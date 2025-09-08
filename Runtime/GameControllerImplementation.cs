@@ -3,7 +3,9 @@ using Arch.Core.Extensions;
 using Arch.System;
 using Lunar.Adapters.Unity.Systems;
 using Lunar.Adapters.Unity.Utils;
-using Lunar.Components;
+using Lunar.Core.Base;
+using Lunar.Core.ECS;
+using Lunar.Core.ECS.Components;
 using UnityEngine;
 using UnityEngine.Pool;
 
@@ -45,14 +47,14 @@ namespace Lunar.Adapters.Unity
                     entity.Add(new TransformComponent());
                 }
 
-                if (gameObjectComponent.GameObject != null)
+                if (gameObjectComponent.GameObjectBase != null)
                 {
                     return;
                 }
 
                 var unityGameObject = _gameObjectPool.Get();
                 unityGameObject.transform.SetParent(_parent);
-                entity.Set(new GameObjectComponent(new GameObject(unityGameObject)));
+                entity.Set(new GameObjectComponent(new GameObjectBase(unityGameObject)));
             });
 
 
@@ -72,19 +74,19 @@ namespace Lunar.Adapters.Unity
                 if (unityGameObject.TryGetComponent<SpriteRenderer>(out var spriteRenderer))
                 {
                     spriteRenderer.enabled = true;
-                    spriteComponent.Sprite = new Sprite(spriteRenderer);
+                    spriteComponent.Sprite = new SpriteBase(spriteRenderer);
                 }
                 else
                 {
-                    spriteComponent.Sprite = new Sprite(unityGameObject.AddComponent<SpriteRenderer>());
+                    spriteComponent.Sprite = new SpriteBase(unityGameObject.AddComponent<SpriteRenderer>());
                 }
             });
 
             world.SubscribeComponentRemoved((in Entity entity, ref GameObjectComponent gameObjectComponent) =>
             {
-                if (gameObjectComponent.GameObject != null)
+                if (gameObjectComponent.GameObjectBase != null)
                 {
-                    _gameObjectPool.Release(gameObjectComponent.GameObject.BaseGameObject as UnityEngine.GameObject);
+                    _gameObjectPool.Release(gameObjectComponent.GameObjectBase.BaseGameObject as UnityEngine.GameObject);
                 }
             });
         }

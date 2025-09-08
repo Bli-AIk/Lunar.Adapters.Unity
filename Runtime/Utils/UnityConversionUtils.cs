@@ -1,4 +1,4 @@
-using Lunar.Components;
+using Lunar.Core.ECS.Components;
 
 namespace Lunar.Adapters.Unity.Utils
 {
@@ -7,7 +7,7 @@ namespace Lunar.Adapters.Unity.Utils
         public static bool TryParseToUnity(this GameObjectComponent gameObject,
             out UnityEngine.GameObject unityGameObject)
         {
-            unityGameObject = gameObject.GameObject.BaseGameObject as UnityEngine.GameObject;
+            unityGameObject = gameObject.GameObjectBase.BaseGameObject as UnityEngine.GameObject;
 
             return unityGameObject;
 
