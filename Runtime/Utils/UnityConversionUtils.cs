@@ -7,7 +7,7 @@ namespace Lunar.Adapters.Unity.Utils
         public static bool TryParseToUnity(this GameObjectComponent gameObject,
             out UnityEngine.GameObject unityGameObject)
         {
-            unityGameObject = gameObject.GameObjectBase.BaseGameObject as UnityEngine.GameObject;
+            unityGameObject = gameObject.GameObjectHandle.NativeGameObject as UnityEngine.GameObject;
 
             return unityGameObject;
 
@@ -19,7 +19,7 @@ namespace Lunar.Adapters.Unity.Utils
         {
             if (sprite.Sprite != null)
             {
-                unitySpriteRenderer = sprite.Sprite.BaseSprite as UnityEngine.SpriteRenderer;
+                unitySpriteRenderer = sprite.Sprite.NativeSprite as UnityEngine.SpriteRenderer;
 
                 return unitySpriteRenderer;
             }

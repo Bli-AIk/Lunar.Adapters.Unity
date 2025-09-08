@@ -13,7 +13,7 @@ namespace Lunar.Adapters.Unity.Tests
         {
             var failed = new List<string>();
 
-            foreach (KeyCodeBase lunarKey in Enum.GetValues(typeof(KeyCodeBase)))
+            foreach (KeyCodeHandle lunarKey in Enum.GetValues(typeof(KeyCodeHandle)))
             {
                 try
                 {

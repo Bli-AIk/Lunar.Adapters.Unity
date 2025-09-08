@@ -47,14 +47,14 @@ namespace Lunar.Adapters.Unity
                     entity.Add(new TransformComponent());
                 }
 
-                if (gameObjectComponent.GameObjectBase != null)
+                if (gameObjectComponent.GameObjectHandle != null)
                 {
                     return;
                 }
 
                 var unityGameObject = _gameObjectPool.Get();
                 unityGameObject.transform.SetParent(_parent);
-                entity.Set(new GameObjectComponent(new GameObjectBase(unityGameObject)));
+                entity.Set(new GameObjectComponent(new GameObjectHandle(unityGameObject)));
             });
 
 
@@ -74,19 +74,19 @@ namespace Lunar.Adapters.Unity
                 if (unityGameObject.TryGetComponent<SpriteRenderer>(out var spriteRenderer))
                 {
                     spriteRenderer.enabled = true;
-                    spriteComponent.Sprite = new SpriteBase(spriteRenderer);
+                    spriteComponent.Sprite = new SpriteHandle(spriteRenderer);
                 }
                 else
                 {
-                    spriteComponent.Sprite = new SpriteBase(unityGameObject.AddComponent<SpriteRenderer>());
+                    spriteComponent.Sprite = new SpriteHandle(unityGameObject.AddComponent<SpriteRenderer>());
                 }
             });
 
             world.SubscribeComponentRemoved((in Entity entity, ref GameObjectComponent gameObjectComponent) =>
             {
-                if (gameObjectComponent.GameObjectBase != null)
+                if (gameObjectComponent.GameObjectHandle != null)
                 {
-                    _gameObjectPool.Release(gameObjectComponent.GameObjectBase.BaseGameObject as UnityEngine.GameObject);
+                    _gameObjectPool.Release(gameObjectComponent.GameObjectHandle.NativeGameObject as UnityEngine.GameObject);
                 }
             });
         }
