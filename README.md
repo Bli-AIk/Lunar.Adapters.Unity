@@ -1,3 +1,15 @@
+This branch (`backup`) serves as an archive of the commit structure before it was reorganized.
+
+It preserves the original state of all commits prior to the refactoring. Moving forward, the primary workflow will be through merging Pull Requests (PRs) to avoid direct commits to the `main` branch.
+
+---
+
+此分支 (`backup`) 是对提交结构进行整理前的版本存档。
+
+该分支保留了重构前，所有提交的原始状态。此后，主要工作流将通过合并PR的方式进行，以避免直接提交到 `main` 分支。
+
+---
+
 # Lunar.Adapters.Unity
 
 > **Status**: 🚧 Initial iteration (features and structure subject to frequent changes)
