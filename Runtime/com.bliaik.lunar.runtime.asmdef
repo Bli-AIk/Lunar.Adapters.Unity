@@ -7,7 +7,9 @@
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [
-        "Lunar.dll"
+        "Lunar.dll",
+        "Arch.dll",
+        "Arch.System.dll"
     ],
     "autoReferenced": true,
     "defineConstraints": [],
