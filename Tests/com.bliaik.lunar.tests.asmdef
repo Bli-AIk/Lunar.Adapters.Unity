@@ -11,7 +11,9 @@
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [
-        "Lunar.dll",
+        
+        "Lunar.Core.Base.dll",
+        "Lunar.Core.ECS.dll",
         "nunit.framework.dll"
     ],
     "autoReferenced": true,

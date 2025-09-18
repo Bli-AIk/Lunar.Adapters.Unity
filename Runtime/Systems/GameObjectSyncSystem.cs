@@ -1,8 +1,8 @@
 using System;
 using Arch.Core;
 using Lunar.Adapters.Unity.Utils;
-using Lunar.Components;
-using Lunar.Systems;
+using Lunar.Core.ECS.Components;
+using Lunar.Core.ECS.Systems;
 using UnityEngine;
 
 namespace Lunar.Adapters.Unity.Systems
